@@ -1,0 +1,19 @@
+"Island","LC_change","minimum","mid","maximum"
+"Hawai'i","Ag contraction",0.070875,5.2169,27.7594
+"Hawai'i","Ag expansion",0.2151,0.3536,4.7586
+"Hawai'i","Urbanization",0.9415,1.62765,1.9977
+"Kaua'i","Ag contraction",4.1071,7.4634,12.501
+"Kaua'i","Ag expansion",0.0953,0.295425,2.2639
+"Kaua'i","Urbanization",0.4455,0.5182,0.7879
+"Lana'i","Ag contraction",0,3e-04,0.261495
+"Lana'i","Ag expansion",0,0,3e-04
+"Lana'i","Urbanization",0.012015,0.0478,0.081426
+"Maui","Ag contraction",3.66093,6.877335,10.7898
+"Maui","Ag expansion",0,0.36119,0.6303
+"Maui","Urbanization",0.16821,1.139964,1.8472
+"Moloka'i","Ag contraction",0.361965,0.435825,0.744
+"Moloka'i","Ag expansion",0,0.01901,0.6234
+"Moloka'i","Urbanization",0.020025,0.0692,0.13571
+"O'ahu","Ag contraction",0.83835,4.8932,6.8929
+"O'ahu","Ag expansion",0.1347,0.475875,1.0036
+"O'ahu","Urbanization",1.051875,1.583,1.8844

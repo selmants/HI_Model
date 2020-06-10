@@ -1,0 +1,86 @@
+"Iteration","Timestep","StratumID","SecondaryStratumID","TransitionGroupID","Amount","DistributionType","DistributionFrequencyID","DistributionSD","DistributionMin","DistributionMax"
+"",2010,"","Hawai'i","URBANIZATION",1.9977,"","",,,
+"",2015,"","Hawai'i","URBANIZATION",1.72518809761104,"","",,,
+"",2010,"","Kaho'olawe","URBANIZATION",0,"","",,,
+"",2015,"","Kaho'olawe","URBANIZATION",0,"","",,,
+"",2010,"","Kaua'i","URBANIZATION",0.7879,"","",,,
+"",2015,"","Kaua'i","URBANIZATION",0.512373245845107,"","",,,
+"",2010,"","Lana'i","URBANIZATION",0.0814,"","",,,
+"",2015,"","Lana'i","URBANIZATION",0.0648888888888889,"","",,,
+"",2010,"","Maui","URBANIZATION",1.1399,"","",,,
+"",2015,"","Maui","URBANIZATION",0.923386647637697,"","",,,
+"",2010,"","Moloka'i","URBANIZATION",0.1357,"","",,,
+"",2015,"","Moloka'i","URBANIZATION",0.104310114209281,"","",,,
+"",2010,"","O'ahu","URBANIZATION",1.8844,"","",,,
+"",2015,"","O'ahu","URBANIZATION",0.970884394719131,"","",,,
+"",2020,"","Hawai'i","URBANIZATION",,"Uniform","Iteration and Timestep",,1.62765,1.9977
+"",2020,"","Kaua'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0.5182,0.7879
+"",2020,"","Lana'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0.0478,0.081426
+"",2020,"","Maui","URBANIZATION",,"Uniform","Iteration and Timestep",,1.139964,1.8472
+"",2020,"","Moloka'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0.0692,0.13571
+"",2020,"","O'ahu","URBANIZATION",,"Uniform","Iteration and Timestep",,1.583,1.8844
+"",2045,"","Hawai'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0.9415,1.9977
+"",2045,"","Kaua'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0.4455,0.7879
+"",2045,"","Lana'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0.012015,0.081426
+"",2045,"","Maui","URBANIZATION",,"Uniform","Iteration and Timestep",,0.16821,1.8472
+"",2045,"","Moloka'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0.020025,0.13571
+"",2045,"","O'ahu","URBANIZATION",,"Uniform","Iteration and Timestep",,1.051875,1.8844
+"",2070,"","Hawai'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0,1.9977
+"",2070,"","Kaua'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0,0.7879
+"",2070,"","Lana'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0,0.081426
+"",2070,"","Maui","URBANIZATION",,"Uniform","Iteration and Timestep",,0,1.8472
+"",2070,"","Moloka'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0,0.13571
+"",2070,"","O'ahu","URBANIZATION",,"Uniform","Iteration and Timestep",,0,1.8844
+,2010,"","Hawai'i","AGRICULTURAL CONTRACTION",,"Uniform","Iteration and Timestep",,0,0.070875
+,2010,"","Kaua'i","AGRICULTURAL CONTRACTION",,"Uniform","Iteration and Timestep",,0,4.1071
+,2010,"","Lana'i","AGRICULTURAL CONTRACTION",,"Uniform","Iteration and Timestep",,0,0
+,2010,"","Maui","AGRICULTURAL CONTRACTION",,"Uniform","Iteration and Timestep",,0,3.66093
+,2010,"","Moloka'i","AGRICULTURAL CONTRACTION",,"Uniform","Iteration and Timestep",,0,0.361965
+,2010,"","O'ahu","AGRICULTURAL CONTRACTION",,"Uniform","Iteration and Timestep",,0,0.83835
+,2010,"","Hawai'i","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0,0.2151
+,2010,"","Kaua'i","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0,0.0953
+,2010,"","Lana'i","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0,0
+,2010,"","Maui","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0,0
+,2010,"","Moloka'i","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0,0
+,2010,"","O'ahu","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0,0.1347
+,2020,"","Hawai'i","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0.3536,4.7586
+,2020,"","Kaua'i","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0.295425,2.2639
+,2020,"","Lana'i","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0,3e-04
+,2020,"","Maui","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0.36119,0.6303
+,2020,"","Moloka'i","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0.01901,0.6234
+,2020,"","O'ahu","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0.475875,1.0036
+,2045,"","Hawai'i","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0.2151,4.7586
+,2045,"","Kaua'i","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0.0953,2.2639
+,2045,"","Lana'i","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0,3e-04
+,2045,"","Maui","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0,0.6303
+,2045,"","Moloka'i","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0,0.6234
+,2045,"","O'ahu","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0.1347,1.0036
+,2070,"","Hawai'i","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0,4.7586
+,2070,"","Kaua'i","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0,2.2639
+,2070,"","Lana'i","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0,3e-04
+,2070,"","Maui","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0,0.6303
+,2070,"","Moloka'i","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0,0.6234
+,2070,"","O'ahu","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0,1.0036
+"",2010,,"Hawai'i","MANAGEMENT: Plantation Harvest [Type]",0,"","",,,
+"",2010,,"Moloka'i","MANAGEMENT: Plantation Harvest [Type]",0,"","",,,
+"",2010,,"O'ahu","MANAGEMENT: Plantation Harvest [Type]",0,"","",,,
+"",2010,,"Kaua'i","MANAGEMENT: Plantation Harvest [Type]",0,"","",,,
+"",2010,,"Hawai'i","MANAGEMENT: Plantation->Ag [Type]",0,"","",,,
+"",2010,,"Moloka'i","MANAGEMENT: Plantation->Ag [Type]",0,"","",,,
+"",2010,,"O'ahu","MANAGEMENT: Plantation->Ag [Type]",0,"","",,,
+"",2010,,"Kaua'i","MANAGEMENT: Plantation->Ag [Type]",0,"","",,,
+"",2010,,"Hawai'i","MANAGEMENT: Plantation->Grassland [Type]",0,"","",,,
+"",2010,,"Moloka'i","MANAGEMENT: Plantation->Grassland [Type]",0,"","",,,
+"",2010,,"O'ahu","MANAGEMENT: Plantation->Grassland [Type]",0,"","",,,
+"",2010,,"Kaua'i","MANAGEMENT: Plantation->Grassland [Type]",0,"","",,,
+"",2010,,"Hawai'i","MANAGEMENT: Plantation->WoodyCrop [Type]",0,"","",,,
+"",2010,,"Moloka'i","MANAGEMENT: Plantation->WoodyCrop [Type]",0,"","",,,
+"",2010,,"O'ahu","MANAGEMENT: Plantation->WoodyCrop [Type]",0,"","",,,
+"",2010,,"Kaua'i","MANAGEMENT: Plantation->WoodyCrop [Type]",0,"","",,,
+"",2012,,"Hawai'i","MANAGEMENT: Plantation->Grassland [Type]",2.024,"Normal","Iteration and Timestep",0.25,,
+"",2012,,"Kaua'i","MANAGEMENT: Plantation Harvest [Type]",0,"","",,,
+"",2017,,"Hawai'i","MANAGEMENT: Plantation->Grassland [Type]",0,"","",,,
+"",2017,,"Kaua'i","MANAGEMENT: Plantation Harvest [Type]",0.5,"Normal","Iteration and Timestep",0.05,,
+"",2019,,"Kaua'i","MANAGEMENT: Plantation Harvest [Type]",0.75,"Normal","Iteration and Timestep",0.1,,
+"",2019,,"Hawai'i","MANAGEMENT: Plantation->Ag [Type]",0.75,"Normal","Iteration and Timestep",0.1,,
+"",2019,,"Hawai'i","MANAGEMENT: Plantation Harvest [Type]",0.75,"Normal","Iteration and Timestep",0.1,,

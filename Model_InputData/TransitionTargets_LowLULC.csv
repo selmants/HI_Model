@@ -1,0 +1,108 @@
+"Iteration","Timestep","StratumID","SecondaryStratumID","TransitionGroupID","Amount","DistributionType","DistributionFrequencyID","DistributionSD","DistributionMin","DistributionMax"
+"",2010,"","Hawai'i","URBANIZATION",1.9977,"","",,,
+"",2015,"","Hawai'i","URBANIZATION",1.72518809761104,"","",,,
+"",2010,"","Kaua'i","URBANIZATION",0.7879,"","",,,
+"",2015,"","Kaua'i","URBANIZATION",0.512373245845107,"","",,,
+"",2010,"","Lana'i","URBANIZATION",0.0814,"","",,,
+"",2015,"","Lana'i","URBANIZATION",0.0648888888888889,"","",,,
+"",2010,"","Maui","URBANIZATION",1.1399,"","",,,
+"",2015,"","Maui","URBANIZATION",0.923386647637697,"","",,,
+"",2010,"","Moloka'i","URBANIZATION",0.1357,"","",,,
+"",2015,"","Moloka'i","URBANIZATION",0.104310114209281,"","",,,
+"",2010,"","O'ahu","URBANIZATION",1.8844,"","",,,
+"",2015,"","O'ahu","URBANIZATION",0.970884394719131,"","",,,
+"",2020,"","Hawai'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0.46744347549363,1.86977390197452
+"",2025,"","Hawai'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0.467473850662615,1.86989540265046
+"",2030,"","Hawai'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0.459424430881875,1.8376977235275
+"",2035,"","Hawai'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0.440713326787775,1.7628533071511
+"",2040,"","Hawai'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0.448701996230548,1.79480798492219
+"",2020,"","Kaua'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0.111354650605872,0.445418602423488
+"",2025,"","Kaua'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0.111094586666028,0.444378346664112
+"",2030,"","Kaua'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0.109085001676325,0.436340006705302
+"",2035,"","Kaua'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0.101448578715456,0.405794314861823
+"",2040,"","Kaua'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0.104994905167872,0.419979620671488
+"",2020,"","Lana'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0.0145324074074074,0.0581296296296296
+"",2025,"","Lana'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0.0144197530864198,0.057679012345679
+"",2030,"","Lana'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0.0139691358024691,0.0558765432098765
+"",2035,"","Lana'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0.0127862654320988,0.0511450617283951
+"",2040,"","Lana'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0.0128989197530864,0.0515956790123457
+"",2020,"","Maui","URBANIZATION",,"Uniform","Iteration and Timestep",,0.206885668530842,0.827542674123367
+"",2025,"","Maui","URBANIZATION",,"Uniform","Iteration and Timestep",,0.205333120363763,0.821332481455052
+"",2030,"","Maui","URBANIZATION",,"Uniform","Iteration and Timestep",,0.19896767287874,0.79587069151496
+"",2035,"","Maui","URBANIZATION",,"Uniform","Iteration and Timestep",,0.182372658026187,0.729490632104748
+"",2040,"","Maui","URBANIZATION",,"Uniform","Iteration and Timestep",,0.183459441743142,0.733837766972568
+"",2020,"","Moloka'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0.0233936104537504,0.0935744418150015
+"",2025,"","Moloka'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0.0232122646362794,0.0928490585451178
+"",2030,"","Moloka'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0.0224868813663957,0.0899475254655829
+"",2035,"","Moloka'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0.0206371540281922,0.0825486161127688
+"",2040,"","Moloka'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0.0207096923551806,0.0828387694207223
+"",2020,"","O'ahu","URBANIZATION",,"Uniform","Iteration and Timestep",,0.266267486931925,1.0650699477277
+"",2025,"","O'ahu","URBANIZATION",,"Uniform","Iteration and Timestep",,0.211103600868337,0.84441440347335
+"",2030,"","O'ahu","URBANIZATION",,"Uniform","Iteration and Timestep",,0.149315526847115,0.59726210738846
+"",2035,"","O'ahu","URBANIZATION",,"Uniform","Iteration and Timestep",,0.087414412075762,0.349657648303048
+"",2040,"","O'ahu","URBANIZATION",,"Uniform","Iteration and Timestep",,0.0658801491759395,0.263520596703758
+"",2045,"","Hawai'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0,0.43129702440276
+"",2045,"","Kaua'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0,0.101448578715456
+"",2045,"","Lana'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0,0.0127862654320988
+"",2045,"","Maui","URBANIZATION",,"Uniform","Iteration and Timestep",,0,0.182372658026187
+"",2045,"","Moloka'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0,0.0206371540281922
+"",2045,"","O'ahu","URBANIZATION",,"Uniform","Iteration and Timestep",,0,0.0658801491759395
+"",2070,"","Hawai'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0,0.172518809761104
+"",2070,"","Kaua'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0,0.0405794314861823
+"",2070,"","Lana'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0,0.00511450617283951
+"",2070,"","Maui","URBANIZATION",,"Uniform","Iteration and Timestep",,0,0.0729490632104748
+"",2070,"","Moloka'i","URBANIZATION",,"Uniform","Iteration and Timestep",,0,0.00825486161127688
+"",2070,"","O'ahu","URBANIZATION",,"Uniform","Iteration and Timestep",,0,0.0263520596703758
+,2010,"","Hawai'i","AGRICULTURAL CONTRACTION",,"Uniform","Iteration and Timestep",,0,0.070875
+,2010,"","Kaua'i","AGRICULTURAL CONTRACTION",,"Uniform","Iteration and Timestep",,0,4.1071
+,2010,"","Lana'i","AGRICULTURAL CONTRACTION",,"Uniform","Iteration and Timestep",,0,0
+,2010,"","Maui","AGRICULTURAL CONTRACTION",,"Uniform","Iteration and Timestep",,0,3.66093
+,2010,"","Moloka'i","AGRICULTURAL CONTRACTION",,"Uniform","Iteration and Timestep",,0,0.361965
+,2010,"","O'ahu","AGRICULTURAL CONTRACTION",,"Uniform","Iteration and Timestep",,0,0.83835
+,2020,"","Hawai'i","AGRICULTURAL CONTRACTION",,"Uniform","Iteration and Timestep",,0,5.2169
+,2020,"","Kaua'i","AGRICULTURAL CONTRACTION",,"Uniform","Iteration and Timestep",,0,7.4634
+,2020,"","Lana'i","AGRICULTURAL CONTRACTION",,"Uniform","Iteration and Timestep",,0,3e-04
+,2020,"","Maui","AGRICULTURAL CONTRACTION",,"Uniform","Iteration and Timestep",,0,6.877335
+,2020,"","Moloka'i","AGRICULTURAL CONTRACTION",,"Uniform","Iteration and Timestep",,0,0.435825
+,2020,"","O'ahu","AGRICULTURAL CONTRACTION",,"Uniform","Iteration and Timestep",,0,4.8932
+,2045,"","Hawai'i","AGRICULTURAL CONTRACTION",,"Uniform","Iteration and Timestep",,0,0.070875
+,2045,"","Kaua'i","AGRICULTURAL CONTRACTION",,"Uniform","Iteration and Timestep",,0,4.1071
+,2045,"","Lana'i","AGRICULTURAL CONTRACTION",,"Uniform","Iteration and Timestep",,0,0
+,2045,"","Maui","AGRICULTURAL CONTRACTION",,"Uniform","Iteration and Timestep",,0,3.66093
+,2045,"","Moloka'i","AGRICULTURAL CONTRACTION",,"Uniform","Iteration and Timestep",,0,0.361965
+,2045,"","O'ahu","AGRICULTURAL CONTRACTION",,"Uniform","Iteration and Timestep",,0,0.83835
+,2010,"","Hawai'i","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0,0.2151
+,2010,"","Kaua'i","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0,0.0953
+,2010,"","Lana'i","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0,0
+,2010,"","Maui","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0,0
+,2010,"","Moloka'i","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0,0
+,2010,"","O'ahu","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0,0.1347
+,2020,"","Hawai'i","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0,0.02151
+,2020,"","Kaua'i","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0,0.00953
+,2020,"","Lana'i","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0,0
+,2020,"","Maui","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0,0
+,2020,"","Moloka'i","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0,0
+,2020,"","O'ahu","AGRICULTURAL EXPANSION",,"Uniform","Iteration and Timestep",,0,0.01347
+"",2010,,"Hawai'i","MANAGEMENT: Plantation Harvest [Type]",0,"","",,,
+"",2010,,"Moloka'i","MANAGEMENT: Plantation Harvest [Type]",0,"","",,,
+"",2010,,"O'ahu","MANAGEMENT: Plantation Harvest [Type]",0,"","",,,
+"",2010,,"Kaua'i","MANAGEMENT: Plantation Harvest [Type]",0,"","",,,
+"",2010,,"Hawai'i","MANAGEMENT: Plantation->Ag [Type]",0,"","",,,
+"",2010,,"Moloka'i","MANAGEMENT: Plantation->Ag [Type]",0,"","",,,
+"",2010,,"O'ahu","MANAGEMENT: Plantation->Ag [Type]",0,"","",,,
+"",2010,,"Kaua'i","MANAGEMENT: Plantation->Ag [Type]",0,"","",,,
+"",2010,,"Hawai'i","MANAGEMENT: Plantation->Grassland [Type]",0,"","",,,
+"",2010,,"Moloka'i","MANAGEMENT: Plantation->Grassland [Type]",0,"","",,,
+"",2010,,"O'ahu","MANAGEMENT: Plantation->Grassland [Type]",0,"","",,,
+"",2010,,"Kaua'i","MANAGEMENT: Plantation->Grassland [Type]",0,"","",,,
+"",2010,,"Hawai'i","MANAGEMENT: Plantation->WoodyCrop [Type]",0,"","",,,
+"",2010,,"Moloka'i","MANAGEMENT: Plantation->WoodyCrop [Type]",0,"","",,,
+"",2010,,"O'ahu","MANAGEMENT: Plantation->WoodyCrop [Type]",0,"","",,,
+"",2010,,"Kaua'i","MANAGEMENT: Plantation->WoodyCrop [Type]",0,"","",,,
+"",2012,,"Hawai'i","MANAGEMENT: Plantation->Grassland [Type]",2.024,"Normal","Iteration and Timestep",0.25,,
+"",2012,,"Kaua'i","MANAGEMENT: Plantation Harvest [Type]",0,"","",,,
+"",2017,,"Hawai'i","MANAGEMENT: Plantation->Grassland [Type]",0,"","",,,
+"",2017,,"Kaua'i","MANAGEMENT: Plantation Harvest [Type]",0.5,"Normal","Iteration and Timestep",0.05,,
+"",2019,,"Hawai'i","MANAGEMENT: Plantation->Ag [Type]",0.25,"Normal","Iteration and Timestep",0.05,,
+"",2019,,"Hawai'i","MANAGEMENT: Plantation->WoodyCrop [Type]",0.25,"Normal","Iteration and Timestep",0.05,,
+"",2019,,"Hawai'i","MANAGEMENT: Plantation Harvest [Type]",0.25,"Normal","Iteration and Timestep",0.05,,

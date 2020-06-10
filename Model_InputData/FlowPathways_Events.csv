@@ -1,0 +1,151 @@
+"Iteration","Timestep","FromStratumID","FromStateClassID","FromAgeMin","FromStockTypeID","ToStratumID","ToStateClassID","ToAgeMin","ToStockTypeID","TransitionGroupID","StateAttributeTypeID","FlowTypeID","Multiplier"
+"","","","","","Deadwood","","","","Atmosphere","AGRICULTURAL EXPANSION: Forest->Ag [Type]","","Emission (deadwood)",1
+"","","","","","Litter","","","","Atmosphere","AGRICULTURAL EXPANSION: Forest->Ag [Type]","","Emission (litter)",1
+"","","","","","Living Biomass","","","","Atmosphere","AGRICULTURAL EXPANSION: Forest->Ag [Type]","","Emission (biomass)",0.45
+"","","","","","Soil","","","","Atmosphere","AGRICULTURAL EXPANSION: Forest->Ag [Type]","","Emission (soil)",0.13
+"","","","","","Deadwood","","","","Atmosphere","AGRICULTURAL EXPANSION: Grassland->Ag [Type]","","Emission (deadwood)",1
+"","","","","","Litter","","","","Atmosphere","AGRICULTURAL EXPANSION: Grassland->Ag [Type]","","Emission (litter)",1
+"","","","","","Living Biomass","","","","Atmosphere","AGRICULTURAL EXPANSION: Grassland->Ag [Type]","","Emission (biomass)",1
+"","","","","","Soil","","","","Atmosphere","AGRICULTURAL EXPANSION: Grassland->Ag [Type]","","Emission (soil)",0.1
+"","","","","","Deadwood","","","","Atmosphere","AGRICULTURAL EXPANSION: Shrubland->Ag [Type]","","Emission (deadwood)",1
+"","","","","","Litter","","","","Atmosphere","AGRICULTURAL EXPANSION: Shrubland->Ag [Type]","","Emission (litter)",1
+"","","","","","Living Biomass","","","","Atmosphere","AGRICULTURAL EXPANSION: Shrubland->Ag [Type]","","Emission (biomass)",1
+"","","","","","Soil","","","","Atmosphere","AGRICULTURAL EXPANSION: Shrubland->Ag [Type]","","Emission (soil)",0.1
+"","","","","","Living Biomass","","","","Harvest Products","AGRICULTURAL EXPANSION: Forest->Ag [Type]","","Harvest (Timber)",0.55
+"","","Dry","","","Deadwood","","","","Atmosphere","FIRE: Forest High Severity [Type]","","Emission (deadwood)",0.2133
+"","","Dry","","","Litter","","","","Atmosphere","FIRE: Forest High Severity [Type]","","Emission (litter)",0.7804
+"","","Mesic","","","Deadwood","","","","Atmosphere","FIRE: Forest High Severity [Type]","","Emission (deadwood)",0.5417
+"","","Mesic","","","Litter","","","","Atmosphere","FIRE: Forest High Severity [Type]","","Emission (litter)",0.9376
+"","","Wet","","","Deadwood","","","","Atmosphere","FIRE: Forest High Severity [Type]","","Emission (deadwood)",0.4135
+"","","Wet","","","Litter","","","","Atmosphere","FIRE: Forest High Severity [Type]","","Emission (litter)",1
+"","","","","","Living Biomass","","","","Atmosphere","FIRE: Forest High Severity [Type]","","Emission (biomass)",0.28
+"","","","","","Living Biomass","","","","Standing Deadwood","FIRE: Forest High Severity [Type]","","Mortality",0.72
+"","","Dry","","","Deadwood","","","","Atmosphere","FIRE: Forest Low Severity [Type]","","Emission (deadwood)",0.1748
+"","","Dry","","","Litter","","","","Atmosphere","FIRE: Forest Low Severity [Type]","","Emission (litter)",0.5974
+"","","Mesic","","","Deadwood","","","","Atmosphere","FIRE: Forest Low Severity [Type]","","Emission (deadwood)",0.4655
+"","","Mesic","","","Litter","","","","Atmosphere","FIRE: Forest Low Severity [Type]","","Emission (litter)",0.8829
+"","","Wet","","","Deadwood","","","","Atmosphere","FIRE: Forest Low Severity [Type]","","Emission (deadwood)",0.3518
+"","","Wet","","","Litter","","","","Atmosphere","FIRE: Forest Low Severity [Type]","","Emission (litter)",1
+"","","","","","Living Biomass","","","","Atmosphere","FIRE: Forest Low Severity [Type]","","Emission (biomass)",0.056
+"","","","","","Living Biomass","","","","Standing Deadwood","FIRE: Forest Low Severity [Type]","","Mortality",0.194
+"","","Dry","","","Deadwood","","","","Atmosphere","FIRE: Forest Medium Severity [Type]","","Emission (deadwood)",0.1934
+"","","Dry","","","Litter","","","","Atmosphere","FIRE: Forest Medium Severity [Type]","","Emission (litter)",0.6983
+"","","Mesic","","","Deadwood","","","","Atmosphere","FIRE: Forest Medium Severity [Type]","","Emission (deadwood)",0.5136
+"","","Mesic","","","Litter","","","","Atmosphere","FIRE: Forest Medium Severity [Type]","","Emission (litter)",0.9102
+"","","Wet","","","Deadwood","","","","Atmosphere","FIRE: Forest Medium Severity [Type]","","Emission (deadwood)",0.3884
+"","","Wet","","","Litter","","","","Atmosphere","FIRE: Forest Medium Severity [Type]","","Emission (litter)",1
+"","","","","","Living Biomass","","","","Atmosphere","FIRE: Forest Medium Severity [Type]","","Emission (biomass)",0.168
+"","","","","","Living Biomass","","","","Standing Deadwood","FIRE: Forest Medium Severity [Type]","","Mortality",0.332
+"","","","","","Litter","","","","Atmosphere","FIRE: Grassland High Severity [Type]","","Emission (litter)",0.9865
+"","","","","","Living Biomass","","","","Atmosphere","FIRE: Grassland High Severity [Type]","","Emission (biomass)",0.4897
+"","","","","","Litter","","","","Atmosphere","FIRE: Grassland Low Severity [Type]","","Emission (litter)",0.9865
+"","","","","","Living Biomass","","","","Atmosphere","FIRE: Grassland Low Severity [Type]","","Emission (biomass)",0.4897
+"","","","","","Litter","","","","Atmosphere","FIRE: Grassland Medium Severity [Type]","","Emission (litter)",0.9865
+"","","","","","Living Biomass","","","","Atmosphere","FIRE: Grassland Medium Severity [Type]","","Emission (biomass)",0.4897
+"","","Dry","","","Deadwood","","","","Atmosphere","FIRE: Plantation High Severity [Type]","","Emission (deadwood)",0.2133
+"","","Dry","","","Litter","","","","Atmosphere","FIRE: Plantation High Severity [Type]","","Emission (litter)",0.7804
+"","","Mesic","","","Deadwood","","","","Atmosphere","FIRE: Plantation High Severity [Type]","","Emission (deadwood)",0.5417
+"","","Mesic","","","Litter","","","","Atmosphere","FIRE: Plantation High Severity [Type]","","Emission (litter)",0.9376
+"","","Wet","","","Deadwood","","","","Atmosphere","FIRE: Plantation High Severity [Type]","","Emission (deadwood)",0.4135
+"","","Wet","","","Litter","","","","Atmosphere","FIRE: Plantation High Severity [Type]","","Emission (litter)",1
+"","","","","","Living Biomass","","","","Atmosphere","FIRE: Plantation High Severity [Type]","","Emission (biomass)",0.28
+"","","","","","Living Biomass","","","","Standing Deadwood","FIRE: Plantation High Severity [Type]","","Mortality",0.72
+"","","Dry","","","Deadwood","","","","Atmosphere","FIRE: Plantation Low Severity [Type]","","Emission (deadwood)",0.1748
+"","","Dry","","","Litter","","","","Atmosphere","FIRE: Plantation Low Severity [Type]","","Emission (litter)",0.5974
+"","","Mesic","","","Deadwood","","","","Atmosphere","FIRE: Plantation Low Severity [Type]","","Emission (deadwood)",0.4655
+"","","Mesic","","","Litter","","","","Atmosphere","FIRE: Plantation Low Severity [Type]","","Emission (litter)",0.8829
+"","","Wet","","","Deadwood","","","","Atmosphere","FIRE: Plantation Low Severity [Type]","","Emission (deadwood)",0.3518
+"","","Wet","","","Litter","","","","Atmosphere","FIRE: Plantation Low Severity [Type]","","Emission (litter)",1
+"","","","","","Living Biomass","","","","Atmosphere","FIRE: Plantation Low Severity [Type]","","Emission (biomass)",0.056
+"","","","","","Living Biomass","","","","Standing Deadwood","FIRE: Plantation Low Severity [Type]","","Mortality",0.194
+"","","Dry","","","Deadwood","","","","Atmosphere","FIRE: Plantation Medium Severity [Type]","","Emission (deadwood)",0.1934
+"","","Dry","","","Litter","","","","Atmosphere","FIRE: Plantation Medium Severity [Type]","","Emission (litter)",0.6983
+"","","Mesic","","","Deadwood","","","","Atmosphere","FIRE: Plantation Medium Severity [Type]","","Emission (deadwood)",0.5136
+"","","Mesic","","","Litter","","","","Atmosphere","FIRE: Plantation Medium Severity [Type]","","Emission (litter)",0.9102
+"","","Wet","","","Deadwood","","","","Atmosphere","FIRE: Plantation Medium Severity [Type]","","Emission (deadwood)",0.3884
+"","","Wet","","","Litter","","","","Atmosphere","FIRE: Plantation Medium Severity [Type]","","Emission (litter)",1
+"","","","","","Living Biomass","","","","Atmosphere","FIRE: Plantation Medium Severity [Type]","","Emission (biomass)",0.168
+"","","","","","Living Biomass","","","","Standing Deadwood","FIRE: Plantation Medium Severity [Type]","","Mortality",0.332
+"","","Dry","","","Deadwood","","","","Atmosphere","FIRE: Shrubland High Severity [Type]","","Emission (deadwood)",0.3301
+"","","Dry","","","Litter","","","","Atmosphere","FIRE: Shrubland High Severity [Type]","","Emission (litter)",0.7975
+"","","Mesic","","","Deadwood","","","","Atmosphere","FIRE: Shrubland High Severity [Type]","","Emission (deadwood)",0.19
+"","","Mesic","","","Litter","","","","Atmosphere","FIRE: Shrubland High Severity [Type]","","Emission (litter)",0.9955
+"","","Wet","","","Deadwood","","","","Atmosphere","FIRE: Shrubland High Severity [Type]","","Emission (deadwood)",0.19
+"","","Wet","","","Litter","","","","Atmosphere","FIRE: Shrubland High Severity [Type]","","Emission (litter)",0.9955
+"","","","","","Living Biomass","","","","Atmosphere","FIRE: Shrubland High Severity [Type]","","Emission (biomass)",0.2965
+"","","","","","Living Biomass","","","","Standing Deadwood","FIRE: Shrubland High Severity [Type]","","Mortality",0.7035
+"","","Dry","","","Deadwood","","","","Atmosphere","FIRE: Shrubland Low Severity [Type]","","Emission (deadwood)",0.2734
+"","","Dry","","","Litter","","","","Atmosphere","FIRE: Shrubland Low Severity [Type]","","Emission (litter)",0.6268
+"","","Mesic","","","Deadwood","","","","Atmosphere","FIRE: Shrubland Low Severity [Type]","","Emission (deadwood)",0.1411
+"","","Mesic","","","Litter","","","","Atmosphere","FIRE: Shrubland Low Severity [Type]","","Emission (litter)",0.9911
+"","","Wet","","","Deadwood","","","","Atmosphere","FIRE: Shrubland Low Severity [Type]","","Emission (deadwood)",0.1411
+"","","Wet","","","Litter","","","","Atmosphere","FIRE: Shrubland Low Severity [Type]","","Emission (litter)",0.9911
+"","","","","","Living Biomass","","","","Atmosphere","FIRE: Shrubland Low Severity [Type]","","Emission (biomass)",0.0425
+"","","","","","Living Biomass","","","","Standing Deadwood","FIRE: Shrubland Low Severity [Type]","","Mortality",0.2075
+"","","Dry","","","Deadwood","","","","Atmosphere","FIRE: Shrubland Medium Severity [Type]","","Emission (deadwood)",0.312
+"","","Dry","","","Litter","","","","Atmosphere","FIRE: Shrubland Medium Severity [Type]","","Emission (litter)",0.7206
+"","","Mesic","","","Deadwood","","","","Atmosphere","FIRE: Shrubland Medium Severity [Type]","","Emission (deadwood)",0.1716
+"","","Mesic","","","Litter","","","","Atmosphere","FIRE: Shrubland Medium Severity [Type]","","Emission (litter)",0.9934
+"","","Wet","","","Deadwood","","","","Atmosphere","FIRE: Shrubland Medium Severity [Type]","","Emission (deadwood)",0.1716
+"","","Wet","","","Litter","","","","Atmosphere","FIRE: Shrubland Medium Severity [Type]","","Emission (litter)",0.9934
+"","","","","","Living Biomass","","","","Atmosphere","FIRE: Shrubland Medium Severity [Type]","","Emission (biomass)",0.1711
+"","","","","","Living Biomass","","","","Standing Deadwood","FIRE: Shrubland Medium Severity [Type]","","Mortality",0.3289
+"","","Dry","","","Deadwood","","","","Atmosphere","FIRE: WoodyCrop High Severity [Type]","","Emission (deadwood)",0.2133
+"","","Dry","","","Litter","","","","Atmosphere","FIRE: WoodyCrop High Severity [Type]","","Emission (litter)",0.7804
+"","","Mesic","","","Deadwood","","","","Atmosphere","FIRE: WoodyCrop High Severity [Type]","","Emission (deadwood)",0.5417
+"","","Mesic","","","Litter","","","","Atmosphere","FIRE: WoodyCrop High Severity [Type]","","Emission (litter)",0.9376
+"","","Wet","","","Deadwood","","","","Atmosphere","FIRE: WoodyCrop High Severity [Type]","","Emission (deadwood)",0.4135
+"","","Wet","","","Litter","","","","Atmosphere","FIRE: WoodyCrop High Severity [Type]","","Emission (litter)",1
+"","","","","","Living Biomass","","","","Atmosphere","FIRE: WoodyCrop High Severity [Type]","","Emission (biomass)",0.28
+"","","","","","Living Biomass","","","","Standing Deadwood","FIRE: WoodyCrop High Severity [Type]","","Mortality",0.72
+"","","Dry","","","Deadwood","","","","Atmosphere","FIRE: WoodyCrop Low Severity [Type]","","Emission (deadwood)",0.1748
+"","","Dry","","","Litter","","","","Atmosphere","FIRE: WoodyCrop Low Severity [Type]","","Emission (litter)",0.5974
+"","","Mesic","","","Deadwood","","","","Atmosphere","FIRE: WoodyCrop Low Severity [Type]","","Emission (deadwood)",0.4655
+"","","Mesic","","","Litter","","","","Atmosphere","FIRE: WoodyCrop Low Severity [Type]","","Emission (litter)",0.8829
+"","","Wet","","","Deadwood","","","","Atmosphere","FIRE: WoodyCrop Low Severity [Type]","","Emission (deadwood)",0.3518
+"","","Wet","","","Litter","","","","Atmosphere","FIRE: WoodyCrop Low Severity [Type]","","Emission (litter)",1
+"","","","","","Living Biomass","","","","Atmosphere","FIRE: WoodyCrop Low Severity [Type]","","Emission (biomass)",0.056
+"","","","","","Living Biomass","","","","Standing Deadwood","FIRE: WoodyCrop Low Severity [Type]","","Mortality",0.194
+"","","Dry","","","Deadwood","","","","Atmosphere","FIRE: WoodyCrop Medium Severity [Type]","","Emission (deadwood)",0.1934
+"","","Dry","","","Litter","","","","Atmosphere","FIRE: WoodyCrop Medium Severity [Type]","","Emission (litter)",0.6983
+"","","Mesic","","","Deadwood","","","","Atmosphere","FIRE: WoodyCrop Medium Severity [Type]","","Emission (deadwood)",0.5136
+"","","Mesic","","","Litter","","","","Atmosphere","FIRE: WoodyCrop Medium Severity [Type]","","Emission (litter)",0.9102
+"","","Wet","","","Deadwood","","","","Atmosphere","FIRE: WoodyCrop Medium Severity [Type]","","Emission (deadwood)",0.3884
+"","","Wet","","","Litter","","","","Atmosphere","FIRE: WoodyCrop Medium Severity [Type]","","Emission (litter)",1
+"","","","","","Living Biomass","","","","Atmosphere","FIRE: WoodyCrop Medium Severity [Type]","","Emission (biomass)",0.168
+"","","","","","Living Biomass","","","","Standing Deadwood","FIRE: WoodyCrop Medium Severity [Type]","","Mortality",0.332
+"","","","","","Living Biomass","","","","Atmosphere","MANAGEMENT: Plantation Harvest [Type]","","Emission (biomass)",0.35
+"","","","","","Living Biomass","","","","Harvest Products","MANAGEMENT: Plantation Harvest [Type]","","Harvest (Timber)",0.55
+"","","","","","Living Biomass","","","","Standing Deadwood","MANAGEMENT: Plantation Harvest [Type]","","Mortality",0.035
+"","","","","","Deadwood","","","","Atmosphere","MANAGEMENT: Plantation->Ag [Type]","","Emission (deadwood)",1
+"","","","","","Litter","","","","Atmosphere","MANAGEMENT: Plantation->Ag [Type]","","Emission (litter)",1
+"","","","","","Living Biomass","","","","Atmosphere","MANAGEMENT: Plantation->Ag [Type]","","Emission (biomass)",0.45
+"","","","","","Soil","","","","Atmosphere","MANAGEMENT: Plantation->Ag [Type]","","Emission (soil)",0.1
+"","","","","","Living Biomass","","","","Harvest Products","MANAGEMENT: Plantation->Ag [Type]","","Harvest (Timber)",0.55
+"","","","","","Deadwood","","","","Atmosphere","MANAGEMENT: Plantation->Grassland [Type]","","Emission (deadwood)",1
+"","","","","","Litter","","","","Atmosphere","MANAGEMENT: Plantation->Grassland [Type]","","Emission (litter)",1
+"","","","","","Living Biomass","","","","Atmosphere","MANAGEMENT: Plantation->Grassland [Type]","","Emission (biomass)",0.45
+"","","","","","Soil","","","","Atmosphere","MANAGEMENT: Plantation->Grassland [Type]","","Emission (soil)",0.1
+"","","","","","Living Biomass","","","","Harvest Products","MANAGEMENT: Plantation->Grassland [Type]","","Harvest (Timber)",0.55
+"","","","","","Deadwood","","","","Atmosphere","MANAGEMENT: Plantation->WoodyCrop [Type]","","Emission (deadwood)",1
+"","","","","","Litter","","","","Atmosphere","MANAGEMENT: Plantation->WoodyCrop [Type]","","Emission (litter)",1
+"","","","","","Living Biomass","","","","Atmosphere","MANAGEMENT: Plantation->WoodyCrop [Type]","","Emission (biomass)",0.45
+"","","","","","Soil","","","","Atmosphere","MANAGEMENT: Plantation->WoodyCrop [Type]","","Emission (soil)",0.1
+"","","","","","Living Biomass","","","","Harvest Products","MANAGEMENT: Plantation->WoodyCrop [Type]","","Harvest (Timber)",0.55
+"","","","","","Deadwood","","","","Atmosphere","URBANIZATION: Agriculture->Developed [Type]","","Emission (deadwood)",1
+"","","","","","Litter","","","","Atmosphere","URBANIZATION: Agriculture->Developed [Type]","","Emission (litter)",1
+"","","","","","Living Biomass","","","","Atmosphere","URBANIZATION: Agriculture->Developed [Type]","","Emission (biomass)",1
+"","","","","","Soil","","","","Atmosphere","URBANIZATION: Agriculture->Developed [Type]","","Emission (soil)",0.07
+"","","","","","Deadwood","","","","Atmosphere","URBANIZATION: Forest->Developed [Type]","","Emission (deadwood)",1
+"","","","","","Litter","","","","Atmosphere","URBANIZATION: Forest->Developed [Type]","","Emission (litter)",1
+"","","","","","Living Biomass","","","","Atmosphere","URBANIZATION: Forest->Developed [Type]","","Emission (biomass)",0.45
+"","","","","","Soil","","","","Atmosphere","URBANIZATION: Forest->Developed [Type]","","Emission (soil)",0.13
+"","","","","","Deadwood","","","","Atmosphere","URBANIZATION: Grassland->Developed [Type]","","Emission (deadwood)",1
+"","","","","","Litter","","","","Atmosphere","URBANIZATION: Grassland->Developed [Type]","","Emission (litter)",1
+"","","","","","Living Biomass","","","","Atmosphere","URBANIZATION: Grassland->Developed [Type]","","Emission (biomass)",1
+"","","","","","Soil","","","","Atmosphere","URBANIZATION: Grassland->Developed [Type]","","Emission (soil)",0.07
+"","","","","","Deadwood","","","","Atmosphere","URBANIZATION: Shrubland->Developed [Type]","","Emission (deadwood)",1
+"","","","","","Litter","","","","Atmosphere","URBANIZATION: Shrubland->Developed [Type]","","Emission (litter)",1
+"","","","","","Living Biomass","","","","Atmosphere","URBANIZATION: Shrubland->Developed [Type]","","Emission (biomass)",1
+"","","","","","Soil","","","","Atmosphere","URBANIZATION: Shrubland->Developed [Type]","","Emission (soil)",0.1
+"","","","","","Living Biomass","","","","Harvest Products","URBANIZATION: Forest->Developed [Type]","","Harvest (Timber)",0.55
