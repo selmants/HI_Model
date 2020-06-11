@@ -13,13 +13,17 @@ library(rgdal)
 library(tidyr, warn.conflicts = FALSE)
 library(dplyr, warn.conflicts = FALSE)
 
+
+## Set working directory at highest level in 
+## GitHub repository https://github.com/selmants/HI_Model 
+
 # read in State Class raster, where: 
 # 1 = Water 		 6 = Forest		
 # 2 = Urban 		 7 = Grassland		
 # 3 = Plantation 	 8 = Agriculture			 
 # 4 = WoodyCrop 	 9 = Wetland		 
 # 5 = Barren 		10 = Shrubland		
-SC <- raster("StateClassNew_250m.tif")
+SC <- raster("./Model_InputData/spatial_data/StateClassNew_250m.tif")
 
 # reclassification matrix for SC to set Water, Urban, 
 # Barren, & Wetland to 1 and set other classes to NA
@@ -35,7 +39,7 @@ SCnoveg <- reclassify(SC, sc_rcl)
 # 4 = Dry Plantation	10 = Mesic Plantation		16 = Wet Plantation
 # 5 = Dry Ag			11 = Mesic Ag				17 = Wet Ag
 # 6 = Dry WoodyCrop		12 = Mesic WoodyCrop		18 = Wet WoodyCrop
-MZSC <- raster("MZSC.tif")
+MZSC <- raster("./Fire/data/processed/MZSC.tif")
 
 # reclassification matrix to create forest MZSC raster
 for_rcl <- c(1,1,2,NA,3,NA,4,4,5,NA,6,6,7,7,8,NA,9,NA,10,10,
@@ -51,7 +55,7 @@ shrubgrass_rcl <- c(1,NA,2,2,3,3,4,NA,5,5,6,NA,7,NA,8,8,9,9,10,NA,
 shrubgrassMZSC <- reclassify(MZSC, shrubgrass_rcl)
 
 # create list of individual island .tif files
-islandlist <- list.files('islands', full.names = TRUE)
+islandlist <- list.files('./FlowMultipliers/data/islands', full.names = TRUE)
 #create raster stack of individual island .tif files
 islandstack <- stack(islandlist)
 
@@ -64,7 +68,7 @@ names(mzsc_island) <- names(islandstack)
 ## late-century rainfall anomalies for RCP 4.5 and RCP 8.5
 
 # create list of annual rainfall .tif files
-rainlist <- list.files('rainfall_tiff_annual', full.names = TRUE)
+rainlist <- list.files('./FlowMultipliers/data/rainfall_tiff_annual', full.names = TRUE)
 #create raster stack of annual rainfall (mm) .tif files
 rainstack <- stack(rainlist)
 # make raster layer of 30-year mean annual rainfall and re-sample
@@ -89,7 +93,7 @@ names(rainfuture) <- rcpnames
 
 #read present day (2001-2010) mean annual temperature (deg C) 
 #TIFF into R and match projection to MZ 
-MATpresent <- raster('MAT_annual.tif') %>%
+MATpresent <- raster('./FlowMultipliers/data/MAT_annual.tif') %>%
 	projectRaster(., MZSC, method = 'bilinear')
 # create list of temperature delta .tif files
 tdeltalist <- list.files(pattern = 'sd_Tdeltas', full.names = TRUE)
@@ -573,6 +577,6 @@ NPPmulti45 <- gmall(gm45list)
 NPPmulti85 <- gmall(gm85list)
 
 # write NPP multiplier data frames to .csv files
-write.csv(NPPmulti45, "../processed/RCP45_NPPmultipliers.csv", row.names = FALSE)
-write.csv(NPPmulti85, "../processed/RCP85_NPPmultipliers.csv", row.names = FALSE)
+write.csv(NPPmulti45, "./Model_InputData/RCP45_NPPmultipliers.csv", row.names = FALSE)
+write.csv(NPPmulti85, "./Model_InputData/RCP85_NPPmultipliers.csv", row.names = FALSE)
 

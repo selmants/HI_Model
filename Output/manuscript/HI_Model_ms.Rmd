@@ -51,13 +51,15 @@ The State of Hawaii recently passed legislation setting a goal to be carbon neut
 
 ### *Study area*
 
-The study area encompasses the terrestrial portion of the seven main Hawaiian Islands, a total land area of 16,464 km^2^ (Figure 1). 
+The study area encompassed the terrestrial portion of the seven main Hawaiian Islands, a total land area of 16,464 km^2^ (Figure 1). This land area was subdivided into a grid of 250 x 250 m simulation cells. The state type of each simulation cell was based on combinations of three Moisture Zones, seven Islands, and ten discrete land cover classes (Figure 1). 
 
-```{r fig.align = 'center', out.width = "80%", fig.cap = "Land cover map of the seven main Hawaiian Islands, adapted from Jacobi et al. (2017). Agriculture in this map combines herbaceous and woody crops, but these two crop types are treated as separate State Classes in the simulation model."}
-knitr::include_graphics("./fig_images/fig1_HI_LC.png")
+```{r fig.align = 'center', out.width = "80%", fig.cap = "Land cover map of the seven main Hawaiian Islands, adapted from Jacobi et al. (2017). Agriculture in this map combines herbaceous and woody crops, but these two crop types are treated as separate land cover classes in the simulation model. Land cover classes not shown: Water, Wetland."}
+knitr::include_graphics("./fig_images/fig1_HI_LC.png").
 ```
 
 ### *States and transitions*
+
+
 
 ### *Carbon stocks and flows*
 
