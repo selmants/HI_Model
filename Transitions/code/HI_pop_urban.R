@@ -5,9 +5,12 @@
 library(dplyr)
 library(tidyr)
 
+# set R working directory to highest level of HI_Model
+# GitHub repository, https://github.com/selmants/HI_Model
+
 # read in projected de facto population by county (includes residents & tourists)
 # data from State of Hawaii Dept. of Business, Economic Development & Tourism
-proj_pop <- read.csv('HI_proj_pop.csv', stringsAsFactors = FALSE)
+proj_pop <- read.csv('./Transitions/data/base/HI_proj_pop.csv', stringsAsFactors = FALSE)
 
 #filter by Maui County and calculate population by island based on 2010
 #population distribution and convert from wide to long format
@@ -62,6 +65,6 @@ HI_ddev$ddev_km2y[29] <- 1.1399 #Maui
 HI_ddev$ddev_km2y[36] <- 0.1357 #Moloka'i
 HI_ddev$ddev_km2y[43] <- 1.8844 #O'ahu
 
-#write ddev_range to .csv file, save in Transistions/data/processed
-write.csv(HI_ddev, "HI_ddev.csv", row.names = FALSE)
+#write ddev_range to .csv file
+write.csv(HI_ddev, "./Transitions/data/processed/HI_ddev.csv", row.names = FALSE)
 

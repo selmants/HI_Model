@@ -7,12 +7,18 @@
 library(dplyr)
 library(tidyr)
 
+## Set R working directory to highest level of HI_Model
+## GitHub repository, https://github.com/selmants/HI_Model
+
 #make a list of NOAA CCAP 1992-2001 land cover change files
-ccap01_list <- list.files(pattern = "LCchange_1992")
+ccap01_list <- list.files(path = "./Transitions/data/base/", 
+	pattern = "LCchange_1992")
 #make a list of NOAA CCAP 2001-2005 land cover change files
-ccap05_list <- list.files(pattern = "LCchange_2001")
+ccap05_list <- list.files(path = "./Transitions/data/base/", 
+	pattern = "LCchange_2001")
 #make a list of NOAA CCAP 2001-2005 land cover change files
-ccap10_list <- list.files(pattern = "LCchange_2005") 
+ccap10_list <- list.files(path = "./Transitions/data/base/", 
+	pattern = "LCchange_2005") 
 
 #read in ccap 1992-2001 files, bind together, filter out zero values
 LC92_01 <- lapply(ccap01_list[c(1:4)], FUN = read.csv, header = TRUE,
@@ -199,8 +205,9 @@ lulc_minmax <- bind_rows(lulc1992_2001, lulc2001_2005, lulc2005_2010) %>%
 		maximum = max(rate_km2y)) %>%
 	data.frame(.) 
 
-#write lulcminmax to .csv file, save in Transistions/data/processed
-write.csv(lulc_minmax, "lulc_historic.csv", row.names = FALSE)
+#write lulcminmax to .csv file
+write.csv(lulc_minmax, "./Transitions/data/processed/lulc_historic.csv", 
+	row.names = FALSE)
 	
 
 

@@ -165,7 +165,6 @@ Events <- bind_rows(list(AgEx, Fire_Forest, Fire_Grassland, Fire_Plantation,
 		FromStockTypeID, ToStratumID, ToStateClassID, ToAgeMin, ToStockTypeID, 
 		TransitionGroupID, StateAttributeTypeID, FlowTypeID, Multiplier)
 
-# write Events dataframe to .csv file, save in 
-# HI_Model/Build_STsim/data
-write.csv(Events, "./data/FlowPathways_Events.csv", row.names = FALSE)
+# write Events dataframe to .csv file
+write.csv(Events, "./InputData/FlowPathways_Events.csv", row.names = FALSE)
 

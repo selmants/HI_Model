@@ -347,11 +347,11 @@ HighLULC_Targets <- bind_rows(list(High_Urban, AgCon_Hist,
 	High_AgEx, Zero_PlantHarvest, High_PlantHarvest))
 
 # write Low LULC Scenario transition targets to .csv file
-write.csv(LowLULC_Targets, "./Model_InputData/TransitionTargets_LowLULC.csv", 
+write.csv(LowLULC_Targets, "./InputData/TransitionTargets_LowLULC.csv", 
 	row.names = FALSE, na = "") 
  
 # write High Urbanization Scenario transition targets to .csv file,
 # save in HI_Model/Build_STsim/data directory
-write.csv(HighLULC_Targets, "./Model_InputData/TransitionTargets_HighLULC.csv", 
+write.csv(HighLULC_Targets, "./InputData/TransitionTargets_HighLULC.csv", 
 	row.names = FALSE, na = "") 
 

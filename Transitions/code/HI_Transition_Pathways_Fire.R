@@ -6,6 +6,9 @@
 ## UPDATED with new fire data 2019-10-31
 ## R version 3.6.1
 
+## Set R working directory to highest level of HI_Model
+## GitHub repository, https://github.com/selmants/HI_Model
+
 # load dplyr package v. 0.8.3
 library(dplyr)
 
@@ -142,6 +145,6 @@ LULC <- bind_rows(list(Urban, AgCon,
 	mutate(TSTMin = NA,
 		TSTMax = NA, 
 		TSTRelative = NA)
-# write Transition Pathways to csv file save in 
-write.csv(LULC, "TransitionPathways_Fire.csv", row.names = FALSE, na = "")
+# write Transition Pathways to csv file 
+write.csv(LULC, "./InputData/TransitionPathways_Fire.csv", row.names = FALSE, na = "")
 

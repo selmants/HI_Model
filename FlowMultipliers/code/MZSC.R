@@ -16,17 +16,17 @@ library(dplyr)
 # 2 = Kahoolawe		6 = Oahu
 # 3 = Lanai			7 = Kauai
 # 4 = Maui
-Islands <- raster("./Build_STsim/data/spatial_data/Island_250m.tif")
+Islands <- raster("./InputData/spatial_data/Island_250m.tif")
 # read Moisture Zone TIFF into R, where:
 # 1 = "Dry", 2 = "Mesic", 3 = "Wet"
-MZ <- raster('./Build_STsim/data/spatial_data/MZ_3_250m.tif')
+MZ <- raster('./InputData/spatial_data/MZ_3_250m.tif')
 # read State Class TIFF into R, where: 
 # 1 = Water 		6 = Forest
 # 2 = Urban 		7 = Grassland
 # 3 = Plantation	8 = Agriculture
 # 4 = WoodyCrop		9 = Wetland
 # 5 = Barren	   10 = Shrubland
-StateClass <- raster('./Build_STsim/data/spatial_data/StateClassNew_250m.tif')
+StateClass <- raster('./InputData/spatial_data/StateClassNew_250m.tif')
 
 # make reclassification matrix to make all islands values = 0
 islands_recl <- c(0, NA, 1, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 

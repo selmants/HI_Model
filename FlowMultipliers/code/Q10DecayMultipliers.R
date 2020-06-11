@@ -504,8 +504,8 @@ Q1085NoForKaho <- filter(Q10FlowMulti85,
 	SecondaryStratumID != "Kaho'olawe" | StateClassID != "Forest:All")
 
 #write modified Q10 Flow Multiplier Tables to .csv files
-write.csv(Q1045NoForKaho, "../processed/RCP45Q10multi_NoKahoFor.csv", row.names = FALSE)
-write.csv(Q1085NoForKaho, "../processed/RCP85Q10multi_NoKahoFor.csv", row.names = FALSE)
+write.csv(Q1045NoForKaho, "./InputData/RCP45Q10multi_NoKahoFor.csv", row.names = FALSE)
+write.csv(Q1085NoForKaho, "./InputData/RCP85Q10multi_NoKahoFor.csv", row.names = FALSE)
 
 
 

@@ -22,7 +22,7 @@ library(dplyr, warn.conflicts = FALSE)
 # 3 = Plantation 	 8 = Agriculture			 
 # 4 = WoodyCrop 	 9 = Wetland		 
 # 5 = Barren 		10 = Shrubland		
-SC <- raster("./Model_InputData/spatial_data/StateClassNew_250m.tif")
+SC <- raster("./InputData/spatial_data/StateClassNew_250m.tif")
 
 # reclassification matrix for SC to set Water, Urban, 
 # Barren, & Wetland to 1 and set other classes to NA
@@ -230,7 +230,7 @@ growthmultipliers <- overlay(presentNPP, NPPMZSC,
 # merge growthmultipliers with non-veg State Class raster
 gm <- merge(growthmultipliers, SCnoveg)
 # save NPP multipliers raster as NCEAS_NPP_sm
-writeRaster(gm, "../processed/NCEAS_NPP_sm.tif", overwrite = TRUE)
+writeRaster(gm, "./InputData/spatial_data/NCEAS_NPP_sm.tif", overwrite = TRUE)
 
 ## Create future NPP flow multiplier tables for RCPs 4.5 & 8.5 ##
 
@@ -576,6 +576,6 @@ NPPmulti45 <- gmall(gm45list)
 NPPmulti85 <- gmall(gm85list)
 
 # write NPP multiplier data frames to .csv files
-write.csv(NPPmulti45, "./Model_InputData/RCP45_NPPmultipliers.csv", row.names = FALSE)
-write.csv(NPPmulti85, "./Model_InputData/RCP85_NPPmultipliers.csv", row.names = FALSE)
+write.csv(NPPmulti45, "./InputData/RCP45_NPPmultipliers.csv", row.names = FALSE)
+write.csv(NPPmulti85, "./InputData/RCP85_NPPmultipliers.csv", row.names = FALSE)
 
