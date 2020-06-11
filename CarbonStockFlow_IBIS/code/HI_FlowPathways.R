@@ -8,7 +8,7 @@
 # Set working directory to "CarbonStockFlow_IBIS" folder of HI_Model
 # GitHub repository (https://github.com/selmants/HI_Model)
 
-## This R script is dependent on output from Run HI_SAV.R and HI_Flux.R scripts ##
+## This R script is dependent on output from HI_SAV.R and HI_Flux.R scripts ##
 
 #load required packages into R
 library(dplyr)

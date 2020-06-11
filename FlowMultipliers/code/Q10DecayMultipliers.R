@@ -6,6 +6,9 @@
 ## Paul C. Selmants
 ## 2020-03-23 (ISO 8601)
 
+## Set working directory at highest level in HI_Model
+## GitHub repository, https://github.com/selmants/HI_Model 
+
 # load required packages into R
 library(raster)
 library(rgdal)
@@ -19,10 +22,10 @@ library(dplyr, warn.conflicts = FALSE)
 # 4 = Dry Plantation	10 = Mesic Plantation		16 = Wet Plantation
 # 5 = Dry Ag			11 = Mesic Ag				17 = Wet Ag
 # 6 = Dry WoodyCrop		12 = Mesic WoodyCrop		18 = Wet WoodyCrop
-MZSC <- raster("MZSC.tif")
+MZSC <- raster("./Fire/data/processed/MZSC.tif")
 
 # create list of individual island .tif files
-islandlist <- list.files('islands', full.names = TRUE)
+islandlist <- list.files('./FlowMultipliers/data/islands', full.names = TRUE)
 #create raster stack of individual island .tif files
 islandstack <- stack(islandlist)
 
@@ -31,7 +34,8 @@ mzsc_island <- mask(MZSC, islandstack)
 names(mzsc_island) <- names(islandstack)
 
 # create list of temperature delta .tif files
-tdeltalist <- list.files(pattern = 'sd_Tdeltas', full.names = TRUE)
+tdeltalist <- list.files(path = "./FlowMultipliers/data", pattern = 'sd_Tdeltas', 
+	full.names = TRUE)
 # stack temperature delta rasters and match projection to MZSC
 tdeltastack <- stack(tdeltalist) %>%
 	projectRaster(., MZSC, method = 'bilinear')

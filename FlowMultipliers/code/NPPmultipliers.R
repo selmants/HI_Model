@@ -13,9 +13,8 @@ library(rgdal)
 library(tidyr, warn.conflicts = FALSE)
 library(dplyr, warn.conflicts = FALSE)
 
-
-## Set working directory at highest level in 
-## GitHub repository https://github.com/selmants/HI_Model 
+## Set working directory at highest level in HI_Model
+## GitHub repository, https://github.com/selmants/HI_Model 
 
 # read in State Class raster, where: 
 # 1 = Water 		 6 = Forest		

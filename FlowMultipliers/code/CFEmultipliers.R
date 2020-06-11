@@ -6,6 +6,10 @@
 ## R version 3.6.1
 ## 2020-04-10
 
+
+## set working directory to "Model_InputData" sub-directory of 
+## HI_Model GitHub repository, https://github.com/selmants/HI_Model
+
 # load dplyr v. 0.8.3 into R
 library(dplyr)
 
