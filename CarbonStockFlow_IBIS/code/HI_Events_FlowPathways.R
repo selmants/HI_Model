@@ -1,6 +1,6 @@
 ## Disturbance Event Flow Pathways
 ## for HI LUCAS Model 
-## Soil flux from Don et al. (2010)
+## Soil flux from Don et al. (2011)
 ## Other fluxes from Sleeter et al. (2017)
 
 ## Paul C. Selmants 

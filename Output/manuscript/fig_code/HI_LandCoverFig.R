@@ -17,10 +17,10 @@ library(ggplot2)
 # 3 = Plantation	8 = Agriculture
 # 4 = WoodyCrop		9 = Wetland
 # 5 = Barren	   10 = Shrubland
-StateClass <- raster('./Build_STsim/data/spatial_data/StateClassNew_250m.tif')
+StateClass <- raster('./InputData/spatial_data/StateClassNew_250m.tif')
 
 # read annual MAT Tiff into R
-MAT <- raster("./FlowMultipliers/data/base/MAT_annual.tif")
+MAT <- raster("./FlowMultipliers/data/MAT_annual.tif")
 
 # make reclassification matrix for simplified land cover raster
 lc_rcl <- c(1, NA, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6,
@@ -61,20 +61,20 @@ lcmap <- ggplot(data=lc_df) +
     legend.background = element_rect(fill="white", 
     	linetype = "solid", size = 0.5, color = "white")) +
     coord_fixed() +
-    annotate(geom = "text", x= -155, y = 20.15, label = "Hawaii Island", 
+    annotate(geom = "text", x= -155, y = 20.15, label = "Hawaiʻi Island", 
         size = 3.5) +
     annotate(geom = "text", x= -156.025, y = 20.95, label = "Maui",
         size = 3.5) +
-    annotate(geom = "text", x= -157, y = 20.55, label = "Kahoolawe",
+    annotate(geom = "text", x= -157, y = 20.55, label = "Kahoʻolawe",
         size = 3.5) +
-    annotate(geom = "text", x= -157.2, y = 20.8, label = "Lanai",
+    annotate(geom = "text", x= -157.2, y = 20.8, label = "Lānaʻi",
         size = 3.5) +
-    annotate(geom = "text", x= -156.78, y = 21.275, label = "Molokai",
+    annotate(geom = "text", x= -156.78, y = 21.275, label = "Molokaʻi",
         size = 3.5) +
-    annotate(geom = "text", x= -157.7, y = 21.65, label = "Oahu",
+    annotate(geom = "text", x= -157.7, y = 21.65, label = "Oʻahu",
         size = 3.5) +
-    annotate(geom = "text", x= -159.1, y = 22.2, label = "Kauai",
+    annotate(geom = "text", x= -159.1, y = 22.2, label = "Kauaʻi",
         size = 3.5)
 
 # save Land Cover map as .png file in HI_Model/output_processing/output
-ggsave("../fig_images/fig1_HI_LC.png", height = 5, width = 7, dpi = 300)
+ggsave("./Output/manuscript/fig_images/fig1_HI_LC.png", height = 5, width = 7, dpi = 300)
