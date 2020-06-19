@@ -65,7 +65,7 @@ lcmap <- ggplot(data=lc_df) +
         size = 3.5) +
     annotate(geom = "text", x= -156.025, y = 20.95, label = "Maui",
         size = 3.5) +
-    annotate(geom = "text", x= -157, y = 20.55, label = "Kahoʻolawe",
+    annotate(geom = "text", x= -157.025, y = 20.55, label = "Kahoʻolawe",
         size = 3.5) +
     annotate(geom = "text", x= -157.2, y = 20.8, label = "Lānaʻi",
         size = 3.5) +
