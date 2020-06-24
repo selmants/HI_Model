@@ -1,6 +1,7 @@
 # Use ggplot to visualize
 # current and end-of-century
-# rainfall and air temperature  
+# rainfall and air temperature 
+# in the Hawaiian Islands 
 # Paul C. Selmants
 # 2020-02-24
 
@@ -58,60 +59,65 @@ t85_df <- rasterToPoints(Tdelta_rcp85) %>%
 #plot of Mean Annual Rainfall using viridis palette
 rain <- ggplot(data=rain_df) +
 	geom_tile(aes(x=x, y=y, fill=layer)) +
-	labs(title = "(b)",
+	labs(title = "Mean Annual Rainfall",
 		x = expression("Longitude " ( degree*W)),
 		y = expression("Latitude " ( degree*N))) +
-	scale_fill_viridis("Mean Annual\nRainfall (mm)", 
+	scale_fill_viridis("mm", 
 		direction = -1, limits = c(100, 9600), 
 		breaks = seq(250,9500, 1750)) +
-	theme_void() +
-	theme(legend.position = c(0.2,0.55),
-		legend.justification = c("left", "top")) +
+	theme_bw() +
+	theme(legend.position = c(0.2, 0.62),
+		legend.justification = c("left", "top"),
+		plot.margin = unit(c(0, 0, 0, 0), "cm")) +
 	coord_fixed()
 
 # plot of Mean Annual Temperature using viridis palette
 airtem <- ggplot(data=MAT_df) +
 	geom_tile(aes(x=x, y=y, fill=layer)) +
-	labs(title = "(a)",
-		x = expression("Longitude " ( degree*W)),
+	labs(title = "Mean Annual Temperature",
+		x = element_blank(),
 		y = expression("Latitude " ( degree*N))) +
-	scale_fill_viridis("Mean Annual\nTemperature (°C)", option = "plasma", 
+	scale_fill_viridis("°C", option = "plasma", 
 		direction = 1, limits = c(3,25), breaks = seq(4,24,4)) +
-	theme_void() +
-	theme(legend.position = c(0.2, 0.55),
-		legend.justification = c("left", "top")) +
+	theme_bw() +
+	theme(legend.position = c(0.2, 0.62),
+		legend.justification = c("left", "top"),
+		plot.margin = unit(c(0, 0, 0, 0), "cm")) +
 	coord_fixed()
 
 # create two panel current climate figure
-climatefig <- plot_grid(airtem, rain, ncol = 1, align = "v", axis = 'l')
+climatefig <- plot_grid(airtem, rain, ncol =1, align = "hv")
 # save current climate fig as .png file 
-ggsave("CurrentClimate.png", climatefig, width = 6, height = 8)
+ggsave("figS2_CurrentClimate.png", climatefig, width = 5, height = 7)
 
 # plot of deltaT at 2100 for RCP 4.5 using RColorBrewer palette
 dt45 <- ggplot(t45_df) +
 	geom_tile(aes(x=x, y=y, fill=layer)) +
-	labs(title = "(a) RCP 4.5") +
-	scale_fill_distiller("Change in\ntemperature (°C)", palette = "YlOrRd",
+	labs(x = element_blank(),
+		y = element_blank(),
+		title = "Temperature change, RCP 4.5") +
+	scale_fill_distiller("°C", palette = "YlOrRd",
 		limits = c(1.5,5), breaks = seq(1.5,5, 0.5), direction = 1) +
-	theme_void() +
-	theme(legend.position="Null") +
+	theme_bw() +
+	theme(legend.position="Null",
+		plot.margin = unit(c(0, 0, 0, 0), "cm")) +
 	coord_fixed()
 
 # plot of deltaT at 2100 for RCP 8.5 using RColorBrewer palette
 dt85 <- ggplot(data=t85_df) +
 	geom_tile(aes(x=x, y=y, fill=layer)) +
-	labs(title = "(b) RCP 8.5") + 
-	scale_fill_distiller("Change in\ntemperature (°C)", palette = "YlOrRd", 
+	labs(x = element_blank(),
+		y = element_blank(),
+		title = "Temperature change, RCP 8.5") +
+	scale_fill_distiller("°C", palette = "YlOrRd", 
 		limits = c(1.5,5), breaks = seq(1.5,5, 0.5), direction = 1) +
-	theme_void() +
+	theme_bw() +
 	theme(legend.justification=c("left", "top"), 
-		legend.position=c(0.15,0.55)) +
+		legend.position=c(0.05,0.8),
+		legend.title=element_text(size=9),
+  	legend.text=element_text(size = 7),
+		plot.margin = unit(c(0, 0, 0, 0), "cm")) +
 	coord_fixed() 
-
-# two panel plot of change in temperature by 2100
-dTfig <- plot_grid(dt45, dt85, ncol = 1, align = "v", axis = "l")
-# save two panel plot of change in temperature as .png file
-ggsave("FutureTemperature.png", dTfig, width = 6, height = 8)
 
 # Create New color palette for change in rainfall
 pal = c("#A50026","#D73027","#F46D43","#FF7F00","#FFFF99","#4575B4","#313695")
@@ -119,28 +125,35 @@ pal = c("#A50026","#D73027","#F46D43","#FF7F00","#FFFF99","#4575B4","#313695")
 # plot of dRainfall by end of century under RCP 4.5 using RColorBrewer	
 r45<- ggplot(data=r45_df) + 
   geom_tile(aes(x=x,y=y,fill=layer)) + 
-  labs(title = "(a) RCP 4.5") +
-  scale_fill_gradientn("Change in\nrainfall (mm)", colors= pal, 
+  labs(title = "Rainfall change, RCP 4.5",
+  		x = element_blank(),
+		y = element_blank()) +
+  scale_fill_gradientn("mm", colors= pal, 
   	limits = c(-1383,580), breaks = seq(-1250, 500, 250)) +
-  theme_void() +
-  theme(legend.position="Null") +
+  theme_bw() +
+  theme(legend.position="Null",
+  	plot.margin = unit(c(0, 0, 0, 0), "cm")) +
   coord_fixed()
 
-## plot of dRainfall by end of century under RCP 8.5 using RColorBrewer	
+# plot of dRainfall by end of century under RCP 8.5 using RColorBrewer	
 r85<- ggplot(data=r85_df) + 
   geom_tile(aes(x=x,y=y,fill=layer)) + 
-  labs(title = "(b) RCP 8.5") +
-  scale_fill_gradientn("Change in\nRainfall (mm)", colors= pal, 
+  labs(title = "Rainfall change, RCP 8.5",
+  		x = element_blank(),
+		y = element_blank()) +
+  scale_fill_gradientn("mm", colors= pal, 
   	limits = c(-1383, 580), breaks = seq(-1250,500,250)) +
-  theme_void() +
+  theme_bw() +
   theme(legend.justification=c("left", "top"), 
-  	legend.position=c(0.15,0.55)) +
+  	legend.position=c(0.05,0.8),
+  	legend.title=element_text(size=9),
+  	legend.text=element_text(size = 7),
+  	plot.margin = unit(c(0, 0, 0, 0), "cm")) +
   coord_fixed()
 
-# two panel plot of change in rainfall
-dRainfig <- plot_grid(r45, r85, ncol = 1, align = "v", axis = "l")
-# save two panel change in rainfall plot as .png file
-ggsave("FutureRainfall.png", dRainfig, width = 6, height = 8)
-
-
+# four panel plot of climate change by RCP
+dclimatefig <- plot_grid(dt45, dt85, r45, r85, ncol = 2, align = "hv",
+	axis = "l")
+# save four panel plot of change in temperature as .png file
+ggsave("figS3_FutureClimate.png", dclimatefig, width = 6.5, height = 5.5)
 

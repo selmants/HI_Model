@@ -67,7 +67,7 @@ names(mzsc_island) <- names(islandstack)
 ## late-century rainfall anomalies for RCP 4.5 and RCP 8.5
 
 # create list of annual rainfall .tif files
-rainlist <- list.files('./FlowMultipliers/data/rainfall_tiff_annual', full.names = TRUE)
+rainlist <- list.files('./Climate/rainfall_tiff_annual', full.names = TRUE)
 #create raster stack of annual rainfall (mm) .tif files
 rainstack <- stack(rainlist)
 # make raster layer of 30-year mean annual rainfall and re-sample
@@ -75,7 +75,7 @@ rainstack <- stack(rainlist)
 rain30ymean <- calc(rainstack, mean) %>%
 	projectRaster(., MZSC, method = 'bilinear')
 # create list of rainfall anomaly .tif files
-rfanomlist <- list.files(pattern = 'sd_rfanom', full.names = TRUE)
+rfanomlist <- list.files("./Climate/GCM_rfanom", full.names = TRUE)
 # create raster stack of rainfall anomaly rasters and re-sample
 # to change projection to UTM
 rfanomstack <- stack(rfanomlist) %>%
@@ -92,10 +92,10 @@ names(rainfuture) <- rcpnames
 
 #read present day (2001-2010) mean annual temperature (deg C) 
 #TIFF into R and match projection to MZ 
-MATpresent <- raster('./FlowMultipliers/data/MAT_annual.tif') %>%
+MATpresent <- raster('./Climate/MAT_annual.tif') %>%
 	projectRaster(., MZSC, method = 'bilinear')
 # create list of temperature delta .tif files
-tdeltalist <- list.files(pattern = 'sd_Tdeltas', full.names = TRUE)
+tdeltalist <- list.files("./Climate/GCM_Tdelta", full.names = TRUE)
 # create raster stack of temperature delta rasters and match projection
 # to MAT_present
 tdeltastack <- stack(tdeltalist) %>%

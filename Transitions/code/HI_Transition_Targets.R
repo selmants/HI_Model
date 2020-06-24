@@ -31,7 +31,8 @@ UrbanHist <- ddev %>%
 		Amount = ddev_km2y, DistributionType, DistributionFrequencyID, 
 		DistributionSD, DistributionMin, DistributionMax)
 # Low urbanization transition targets by island for 2020-2045 
-# based on statewide population projections from HI Office of Planning
+# based on statewide population projections from HI Dept. of Business, Economic
+# Development, and Tourism (DBEDT). 
 UrbanLow_early <- ddev %>%
 	filter(start_year >= 2020) %>%
 	mutate(min = ddev_km2y*0.25, 
@@ -49,7 +50,7 @@ UrbanLow_early <- ddev %>%
 		Amount, DistributionType, DistributionFrequencyID, 
 		DistributionSD, DistributionMin = min, DistributionMax = ddev_km2y) 
 # Low urbanization transition targes by island for 2045-2070
-# using zero to minimum annual rate population projection per island
+# using zero to 25% of minimum annual rate population projection per island
 UrbanLow_mid <- ddev %>%
 	group_by(island) %>%
 	summarise(DistributionMax = min(ddev_km2y)*0.25) %>%
@@ -68,7 +69,7 @@ UrbanLow_mid <- ddev %>%
 		DistributionSD, DistributionMin, DistributionMax) %>%
 	data.frame(.)
 # Low urbanization transition targes by island for 2070-2100 using
-# zero to 0.25 x minimum annual rate population projection per island
+# zero to 0.10 x minimum annual rate population projection per island
 UrbanLow_late <- ddev %>%
 	group_by(island) %>%
 	summarise(DistributionMax = min(ddev_km2y)*0.10) %>%

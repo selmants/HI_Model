@@ -32,7 +32,7 @@ lc_rcl <- c(1, NA, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6,
 # 4 = Agriculture	10 = Shrubland
 # 5 = Barren	
 lc <- reclassify(StateClass, lc_rcl)
-# re-sample lc projection to Lat. Long. using rainstack
+# re-sample lc projection to Lat. Long. using MAT
 lcdeg <- projectRaster(lc, MAT, method = 'ngb')
 # convert lc raster to points dataframe for usage in ggplot 
 lc_df <- rasterToPoints(lcdeg) %>%
@@ -51,7 +51,7 @@ lcmap <- ggplot(data=lc_df) +
 	scale_fill_manual("Land Cover", values = lcpal,
 		 labels=c("Developed", "Tree Plantation", "Agriculture",
 		 	"Bare Ground", "Forest", "Grassland", "Shrubland")) +
-	theme_minimal() + 
+	theme_bw() + 
 	theme(axis.title.x = element_text(size=10),
         axis.text.x  = element_text(size=8),
         axis.title.y = element_text(size=10),
