@@ -205,4 +205,4 @@ SAV_brief <- bind_rows(noveg, nontree_brief, trees) %>%
 # write SAV to .csv file
 write.csv(SAV, "./data/processed/SAV_Full.csv", row.names = FALSE, na = "")
 # write SAV_brief to .csv file
-write.csv(SAV_brief, "../Build_STsim/data/SAVbrief.csv", row.names = FALSE, na = "")
+write.csv(SAV_brief, "../InputData/SAVbrief.csv", row.names = FALSE, na = "")

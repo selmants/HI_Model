@@ -319,6 +319,6 @@ Plantat_FM <- tempFM %>%
 FlowPathways <- bind_rows(tempFM, DWC_FM, Plantat_FM) %>%
 	arrange(FromStratumID, FromStateClassID) 
 
-#write FlowPathways dataframe to .csv file, save in Build_STsim/data 
-write.csv(FlowPathways, "../Build_STsim/data/FlowPathways.csv", row.names = FALSE, na = "")
+#write FlowPathways dataframe to .csv file, save in HI_Model/InputData 
+write.csv(FlowPathways, "FlowPathways.csv", row.names = FALSE, na = "")
 
