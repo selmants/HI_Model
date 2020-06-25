@@ -25,19 +25,19 @@ library(stringr)
 # 2 = Kahoolawe		6 = Oahu
 # 3 = Lanai			7 = Kauai
 # 4 = Maui
-Islands <- raster("../Model_InputData/spatial_data/Island_250m.tif")
+Islands <- raster("./InputData/spatial_data/initial_conditions/Island_250m.tif")
 # read Moisture Zone GeoTIFF into R, where:
 # 1 = "Dry"
 # 2 = "Mesic"
 # 3 = "Wet"
-MZ <- raster("../Model_InputData/spatial_data/MZ_3_250m.tif")
+MZ <- raster("./InputData/spatial_data/initial_conditions/MZ_3_250m.tif")
 # read State Class GeoTIFF into R, where: 
 # 1 = Water 		6 = Forest
 # 2 = Urban 		7 = Grassland
 # 3 = Plantation	8 = Agriculture
 # 4 = WoodyCrop		9 = Wetland
 # 5 = Barren	   10 = Shrubland
-StateClass <- raster("../Model_InputData/spatial_data/StateClassNew_250m.tif")
+StateClass <- raster("./InputData/spatial_data/intital_conditions/StateClassNew_250m.tif")
 # read in Hawaii statewide annual fire perimeter shapefile (1999-2019) 
 fires <- st_read("./data/base/2019_1999_Hawaii_Fire_Perimeters.shp") %>%
 	dplyr::select(UH_ID, Year, geometry)
@@ -291,7 +291,7 @@ high_fire <- firedistribution %>%
 		ExternalVariableMin, ExternalVariableMax, Value) %>%
 	as.data.frame()
 	
-	### Write data to HI_Model/Model_InputData/spatial_data ###
+	### Write data to HI_Model/InputData/spatial_data/spatial_multipliers ###
 
 # write individual fire rasters to GeoTIFF files 
 writeRaster(firebrick, names(firebrick), 
@@ -299,7 +299,7 @@ writeRaster(firebrick, names(firebrick),
 # write fire_2020 raster to GeoTIFF file
 writeRaster(fire_2020, "fire_2020.tif", overwrite = TRUE)
 
-## Write data to HI_Model/Model_InputData ##
+## Write data to HI_Model/InputData ##
 
 # write firedistribution to .csv file
 write.csv(firedistribution, "FireDistributions.csv", row.names = FALSE)
