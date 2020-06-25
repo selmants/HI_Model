@@ -24,7 +24,10 @@ sc <- read.csv("StateClassArea.csv", stringsAsFactors = FALSE) %>%
 		area_min = min(area), 
 		area_max = max(area)) %>%
 	data.frame() 
- 
+
+#Make Land Use color palette
+lu_pal <- c("#A6761D","#1B9E77")
+
 # ggplot faceted land cover change graph
 scfig <- sc %>%
 filter(StateClassID %in% c("Agriculture",
@@ -33,7 +36,11 @@ filter(StateClassID %in% c("Agriculture",
 	facet_wrap(~ StateClassID, scales = "free_y") +
 	geom_ribbon(aes(ymin = area_min, ymax = area_max, fill = LandUse),
 		alpha = 0.4, color = NA) +
-	geom_line(size = 0.75) +
+	geom_line(size = 0.5) +
+	scale_fill_manual(values = lu_pal, labels=c("High", "Low"),
+			name = "Land use\nscenario") +
+	scale_colour_manual(values = lu_pal, labels=c("High", "Low"), 
+			name = "Land use\nscenario") +
 	scale_x_continuous(limits = c(2000,2100), breaks = seq(2000,2100,20)) +
 	scale_y_continuous(breaks = scales::pretty_breaks(5), limits = c(NA, NA)) +
 	labs(x = "Year", 
@@ -46,5 +53,5 @@ filter(StateClassID %in% c("Agriculture",
 		legend.text = element_text(size=10))}
 
 # save figure to .png file 
-ggsave("figS4_StateClassArea.png", height = 4, width = 7, dpi = 300)
+ggsave("figS5_StateClassArea.png", height = 4, width = 7, dpi = 300)
 	
