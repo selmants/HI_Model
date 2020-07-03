@@ -12,27 +12,27 @@ library(cowplot)
 ## https://doi.org/10.5066/P9AWLFKZ
 
 # read LUCAS CFE C stocks from RCP85High output data into R
-CFE_Cstocks <- read.csv("Cstocks_CFE.csv", stringsAsFactors = FALSE) %>%
+CFE_Cstocks <- read.csv("./HI_Cstocks/Cstocks_CFE.csv", stringsAsFactors = FALSE) %>%
 	select(-Scenario)
 # read in LUCAS C stocks by scenario and filter on RCP85High scenario 
-Cstocks <- read.csv("Cstocks_Island.csv", stringsAsFactors = FALSE)	%>%
+Cstocks <- read.csv("./HI_Cstocks/Cstocks_Island.csv", stringsAsFactors = FALSE)	%>%
 	filter(Scenario == "RCP85High") %>%
 	mutate(CFE_rate = 0) %>%
 	select(CFE_rate, Timestep:Amount)
 
 # read in CFE base flow data from RCP85High Scenario
-cfe_baseflow <- read.csv("BaseFlows_CFE.csv", stringsAsFactors = FALSE) %>%
+cfe_baseflow <- read.csv("./HI_Cflows/BaseFlows_CFE.csv", stringsAsFactors = FALSE) %>%
 	select(-Scenario)
 # read in CFE C loss data (transition, fire, harvest)
-cfe_closs <- read.csv("TransitHarvFlows_CFE.csv", stringsAsFactors = FALSE) %>%
+cfe_closs <- read.csv("./HI_Cflows/TransitHarvFlows_CFE.csv", stringsAsFactors = FALSE) %>%
 	select(-Scenario)
 # read in zero CFE base flow data 
-baseflowzero <- read.csv("BaseFlows.csv", stringsAsFactors = FALSE) %>%
+baseflowzero <- read.csv("./HI_Cflows/BaseFlows.csv", stringsAsFactors = FALSE) %>%
 	filter(Scenario == "RCP85High") %>%
 	mutate(CFE_Rate = 0) %>%
 	select(CFE_Rate, Timestep:Amount)
 # read zero CFE non-Rh C Loss data 
-closszero <- read.csv("TransitHarvFlows.csv", stringsAsFactors = FALSE) %>%
+closszero <- read.csv("./HI_Cflows/TransitHarvFlows.csv", stringsAsFactors = FALSE) %>%
 	filter(Scenario == "RCP85High") %>%
 	mutate(CFE_Rate = 0) %>%
 	select(CFE_Rate, Timestep:Amount)
@@ -80,7 +80,7 @@ cfeTECfig <- ggplot(cfetec, aes(Timestep, C_Tg, color = CFE_rate)) +
         legend.position = c(0.15, 0.73),
 		panel.grid.minor = element_blank())		 
 
- ## Summarize CFE NBP and create Mean NBP by CFE figure ## 
+## Summarize CFE NBP and create Mean NBP by CFE figure ## 
 
 # combine base flow data
 cfeflow <- bind_rows(baseflowzero, cfe_baseflow) 
@@ -134,7 +134,7 @@ cfeNBPfig <- ggplot(nbp, aes(CFE_Rate, NBPmean)) +
 		size = 0.75, width = 0, color = "#006D2C") +
 	geom_hline(aes(yintercept=0), linetype = "dashed") +
 	scale_x_continuous(limits = c(-0.02, 15.2), breaks = seq(0, 15, 2.5)) +
-	scale_y_continuous(limits = c(-0.25, 1.8), breaks = seq(-0.25, 1.75, 0.25)) +
+	scale_y_continuous(limits = c(-0.25, 1.5), breaks = seq(-0.25, 1.5, 0.25)) +
 	ylab(expression(Net~biome~productivity~(Tg~C~y^{-1}))) + 
 	xlab(expression(Rate~of~CO[2]~fertilization~effect~('%'))) +
 	theme_bw() +
