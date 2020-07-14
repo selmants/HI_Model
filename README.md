@@ -15,9 +15,9 @@ The manuscript was submitted for publication in the IOP journal *Environmental R
 
 * __Fire__ contains a spatial database of fire occurence and fire extent in shapefile format for the years 1999-2018, as well as R code used to calculate annual burned area by island, ignition probabilities, and fire size distribution. 
 
-* __FlowMultipliers__ contains R code to calculate growth multipliers based on projected changes in temperature and rainfall, decomposition multipliers based on projected changes in temperature temperature using a Q10 function, and growth multipliers based on projected changes in atmospheric CO<sub>2</sub> concentration using different levels of a CO<sub>2</sub> fertilization effect. 
+* __FlowMultipliers__ contains R code to calculate growth multipliers based on projected climate change, decomposition multipliers based on projected climate change using a Q<sub>10</sub> temperature coefficient, and growth multipliers based on projected changes in atmospheric CO<sub>2</sub> concentration using different levels of a CO<sub>2</sub> fertilization effect. 
 
-* __Transitions__ contains R code and data used to create Transition Pathways and Transition Targets for each land-use change scenario. 
+* __Transitions__ contains R code, historical land cover change data, and population projections used to create Transition Pathways and Transition Targets for each land-use change scenario. 
 
 * __InputData__ contains input data used to parameterize the model, including Flow Pathways, State Attribute Values, Flow Multipliers, Transition Targets, Transition Pathways, and Spatial Multipliers for growth, fire, and transitions. 
 
