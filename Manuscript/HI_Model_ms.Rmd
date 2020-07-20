@@ -48,13 +48,13 @@ The State of Hawai`i recently passed legislation setting a goal to be carbon neu
 ## Introduction
 
 ## Methods
-We used the Land Use and Carbon Scenario Simulator (LUCAS) to project changes in ecosystem carbon balance for the main Hawaiian Islands under four unique scenarios incorporating different levels of climate and land-use change. The LUCAS model is a state-and-transition simulation model ... 
+We used the Land Use and Carbon Scenario Simulator (LUCAS), an integrated landscape change and carbon gain-loss model, to project changes in ecosystem carbon balance for the seven main Hawaiian Islands under four scenarios incorporating different levels of climate and land-use change. 
 
 ### *Study area*
 
-The study area encompassed the terrestrial portion of the seven main Hawaiian Islands, a total land area of 16,464 km^2^ (Figure 1). This land area was subdivided into a grid of 250 x 250 m simulation cells. Each simulation cell was assigned to one of 210 possible state types based on the unique combination of three Moisture Zones (Figure S1), seven Islands, and ten discrete land cover classes (Figure 1). 
+The study area encompassed the terrestrial portion of the seven main Hawaiian Islands, a total land area of 16,464 km^2^ (Figure 1). This land area was subdivided into a grid of 250 x 250 m simulation cells. Each simulation cell was assigned to one of 210 possible state types based on the unique combination of three moisture zones (dry, mesic, and wet; Figure S1), seven islands, and ten discrete land cover classes (Figure 1). 
 
-```{r fig.align = 'center', out.width = "80%", fig.cap = "Land cover map of the seven main Hawaiian Islands, adapted from Jacobi et al. (2017). Agriculture in this map combines herbaceous and woody crops, but these two crop types are treated as separate land cover classes in the simulation model. Water and Wetland land cover classes are not shown."}
+```{r fig.align = 'center', out.width = "80%", fig.cap = "Land cover classification of the seven main Hawaiian Islands, adapted from Jacobi et al. (2017). Agriculture in this map combines herbaceous and woody crops, but these two crop types are treated as separate land cover classes in the simulation model. Water and Wetland land cover classes are not shown."}
 knitr::include_graphics("./fig_images/fig1_HI_LC.png")
 ```
 
