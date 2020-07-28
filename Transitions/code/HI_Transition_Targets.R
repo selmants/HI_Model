@@ -92,7 +92,7 @@ Low_Urban <- bind_rows(UrbanHist, UrbanLow_early, UrbanLow_mid, UrbanLow_late) %
 	filter(SecondaryStratumID != "Kaho'olawe")
 
 # High urbanization transition targets by island for 2010-2045
-# based on mid to max range of historical annual rates (1992-2010 NOAA CCAP)  
+# based on mid- to max range of historical annual rates (1992-2010 NOAA CCAP)  
 UrbanHigh_early <- lulc %>%
 	filter(LC_change == "Urbanization") %>%
 	mutate(Iteration = "",
@@ -107,7 +107,7 @@ UrbanHigh_early <- lulc %>%
 		Amount, DistributionType, DistributionFrequencyID, DistributionSD, 
 		DistributionMin = mid, DistributionMax = maximum)
 # High urbanization transition targets for 2045-2100
-# based on mid-max range of historical annual rates (1992-2010) 
+# based on minimum to maximum range of historical annual rates (1992-2010) 
 UrbanHigh_mid <- lulc %>%
 	filter(LC_change == "Urbanization") %>%
 	mutate(Iteration = "",
