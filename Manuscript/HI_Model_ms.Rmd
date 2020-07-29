@@ -13,6 +13,8 @@ output:
   pdf_document: 
     latex_engine: xelatex
 urlcolor: blue
+nocite: |
+  @jacobi_map_2017
 ---
 
 ```{r setup, include=FALSE}
@@ -44,7 +46,7 @@ Parker C. Trauernicht^3^, Abby G. Frazier^4^, Gregory P. Asner^5^
 \pagebreak
 
 ## Abstract
-The State of Hawai`i recently passed legislation setting a goal to be carbon neutral by 2045. Meeting this goal will partly depend on carbon sequestration by terrestrial ecosystems, yet the future direction and magnitude of the land carbon sink in the Hawaiian Islands is highly uncertain. We used simulation modeling to assess how projected future changes in climate and land use will influence ecosystem carbon balance in the Hawaiian Islands under four unique scenarios over a 90-year timespan. Net ecosystem carbon balance declined under all four scenarios. Moving from a high to a low radiative forcing scenario reduced net ecosystem carbon loss by ~21%, and net carbon losses were reduced by a total of ~55% under the combined scenario of low radiative forcing and low rates of land‐use change. A sensitivity test of the CO~2~ fertilization effect on plant productivity revealed it to be a major source of uncertainty in projections of ecosystem carbon balance. Reconciling this uncertainty in how net photosynthesis will respond to rising atmospheric CO~2~ will be essential to better constrainment of models used to evaluate the effectiveness of ecosystem‐based climate mitigation strategies.   
+The State of Hawai`i passed legislation in 2018 setting a goal to be carbon neutral by 2045. Meeting this goal will partly depend on carbon sequestration by terrestrial ecosystems, yet the future direction and magnitude of the land carbon sink in the Hawaiian Islands is highly uncertain. We used simulation modeling to assess how projected future changes in climate and land use will influence ecosystem carbon balance in the Hawaiian Islands under four unique scenarios over a 90-year timespan. Net ecosystem carbon balance declined under all four scenarios. Moving from a high to a low radiative forcing scenario reduced net ecosystem carbon loss by ~21%, and net carbon losses were reduced by a total of ~55% under the combined scenario of low radiative forcing and low rates of land‐use change. A sensitivity test of the CO~2~ fertilization effect on plant productivity revealed it to be a major source of uncertainty in projections of ecosystem carbon balance. Reconciling this uncertainty in how net photosynthesis will respond to rising atmospheric CO~2~ will be essential to better constrainment of models used to evaluate the effectiveness of ecosystem‐based climate mitigation strategies.   
 
 ## Introduction
 
@@ -59,9 +61,9 @@ knitr::include_graphics("./fig_images/fig1_HI_LC.png")
 ```
 
 ### *States and transitions*
-Transition pathways were based on a model described in @daniel_state-and-transition_2016 and @selmants_baseline_2017. Specifically, transitions between state types were pre-defined to represent urbanization, agricultural contraction, agricultural expansion, harvesting of tree plantations, and wildfire. Agriculture, forest, grassland, tree plantation, and shrubland state types each had multiple transition pathways, while the barren state type could only transition to urban [@daniel_state-and-transition_2016]. Although several state types could transition to urban, there was no transition pathway out of the urban state type. Water and wetland state types remained static throughout the simulation period. We developed a high and a low land-use scenario, with transition targets for agricultural contraction, agricultural expansion, and urbanization based on historical trends and population projections. 
+Transition pathways were modified from @daniel_state-and-transition_2016 and @selmants_baseline_2017. Transitions between state types were pre-defined to represent urbanization, agricultural contraction, agricultural expansion, harvesting of tree plantations, and wildfire. Agriculture, forest, grassland, tree plantation, and shrubland state types each had multiple transition pathways, while the barren state type could only transition to urban. Although several state types could transition to urban, there was no transition pathway from urban to any other state type. Water and wetland state types remained static throughout the simulation period. We developed a high and a low land-use scenario, with transition targets based on historical trends of land use change and population projections [@kim_population_2018].
 
-For the high land-use scenario, 
+For the high land-use scenario, annual transition targets for agricultural contraction, agricultural expansion, and urbanization were based on 
 
 
 
@@ -81,11 +83,11 @@ For the high land-use scenario,
 
 ## Acknowledgements
 
-This study was funded by the Biological Sequestration Program of the U.S. Geological Survey. Thanks to Leonardo Frid and Colin Daniel of ApexRMS for assistance with SyncroSim software. Any use of trade, firm, or product names is for descriptive purposes only and does not imply endorsement by the U.S. Government.
+This study was funded by the Biological Sequestration Program of the U.S. Geological Survey. Thanks to Nicholas Koch of Forest Solutions, Inc. for information on eucalyptus harvesting and to Leonardo Frid and Colin Daniel of ApexRMS for assistance with the SyncroSim software. Any use of trade, firm, or product names is for descriptive purposes only and does not imply endorsement by the U.S. Government.
 
 ## Data Availability
 
-Tabular model output data are available from the USGS ScienceBase data repository at: https://doi.org/10.5066/P9AWLFKZ. Model input data and R code used to generate input data, summarize output data, and compile this manuscript are available from the HI_Model GitHub repository at: https://github.com/selmants/HI_Model. 
+Tabular model output data are available from the USGS ScienceBase data repository at: https://doi.org/10.5066/P9AWLFKZ. Model input data and R code used to format input data, summarize output data, and compile this manuscript are available from the HI_Model GitHub repository at: https://github.com/selmants/HI_Model. 
 
 ## ORCID
 
@@ -102,7 +104,6 @@ Abby G. Frazier https://orcid.org/0000-0003-4076-4577
 Gregory P. Asner https://orcid.org/0000-0001-7893-6421
 
 ## References
-
 
 
 
