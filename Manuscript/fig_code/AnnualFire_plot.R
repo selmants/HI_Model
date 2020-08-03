@@ -55,4 +55,4 @@ firepanel <- plot_grid(stateplot, islandplot,
 	labels = c("A", "B"), rel_widths = c(1.15, 1))
 
 # save as .png file 
-ggsave("FigS4_AnnualAreaBurned.png", width = 7.5, height = 3)
+ggsave("FigS2_AnnualAreaBurned.png", width = 7.5, height = 3)
