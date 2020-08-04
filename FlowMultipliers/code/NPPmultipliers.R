@@ -7,11 +7,13 @@
 ## Paul C. Selmants
 ## 2020-03-19 (ISO 8601)
 
+## R version 3.6.1
+
 # load required packages into R
-library(raster)
-library(rgdal)
-library(tidyr, warn.conflicts = FALSE)
-library(dplyr, warn.conflicts = FALSE)
+library(raster) #version 3.1-5
+library(rgdal) #version 1.4-8
+library(tidyr, warn.conflicts = FALSE) #version 1.0.2
+library(dplyr, warn.conflicts = FALSE) #version 0.8.5
 
 ## Set working directory at highest level in HI_Model
 ## GitHub repository, https://github.com/selmants/HI_Model 
@@ -22,7 +24,7 @@ library(dplyr, warn.conflicts = FALSE)
 # 3 = Plantation 	 8 = Agriculture			 
 # 4 = WoodyCrop 	 9 = Wetland		 
 # 5 = Barren 		10 = Shrubland		
-SC <- raster("./InputData/spatial_data/StateClassNew_250m.tif")
+SC <- raster("./InputData/spatial_data/initial_conditions/StateClassNew_250m.tif")
 
 # reclassification matrix for SC to set Water, Urban, 
 # Barren, & Wetland to 1 and set other classes to NA
