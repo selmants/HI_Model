@@ -25,19 +25,19 @@ library(stringr)
 # 2 = Kahoolawe		6 = Oahu
 # 3 = Lanai			7 = Kauai
 # 4 = Maui
-Islands <- raster("./InputData/spatial_data/initial_conditions/Island_250m.tif")
+Islands <- raster("../InputData/spatial_data/initial_conditions/Island_250m.tif")
 # read Moisture Zone GeoTIFF into R, where:
 # 1 = "Dry"
 # 2 = "Mesic"
 # 3 = "Wet"
-MZ <- raster("./InputData/spatial_data/initial_conditions/MZ_3_250m.tif")
+MZ <- raster("../InputData/spatial_data/initial_conditions/MZ_3_250m.tif")
 # read State Class GeoTIFF into R, where: 
 # 1 = Water 		6 = Forest
 # 2 = Urban 		7 = Grassland
 # 3 = Plantation	8 = Agriculture
 # 4 = WoodyCrop		9 = Wetland
 # 5 = Barren	   10 = Shrubland
-StateClass <- raster("./InputData/spatial_data/intital_conditions/StateClassNew_250m.tif")
+StateClass <- raster("../InputData/spatial_data/initial_conditions/StateClassNew_250m.tif")
 # read in Hawaii statewide annual fire perimeter shapefile (1999-2019) 
 fires <- st_read("./data/base/2019_1999_Hawaii_Fire_Perimeters.shp") %>%
 	dplyr::select(UH_ID, Year, geometry)
@@ -80,7 +80,7 @@ Maui <- reclassify(Islands, Maui_recl)
 Molokai <- reclassify(Islands, Molokai_recl)
 Oahu <- reclassify(Islands, Oahu_recl)
 Kauai <- reclassify(Islands, Kauai_recl)
-#make raster stack of invidual island rasters
+# make raster stack of invidual island rasters
 islandstack <- stack(Hawaii, Kahoolawe, Lanai, Maui, Molokai, Oahu, Kauai)
 # make vector of island names
 islandnames <- c("Hawaii", "Kahoolawe", "Lanai", "Maui", "Molokai", "Oahu", "Kauai")
@@ -149,7 +149,7 @@ mzsc_area <- zonal(mzsc_island, MZSC, fun = 'count') %>%
 		StratumID = rep(c(rep(c("Dry", "Mesic", "Wet"), each = 6)), 7), 
 		StateClassID = rep(c("Forest", "Grassland", "Shrubland", "Plantation",
 			"Agriculture", "WoodyCrop"), 21)) %>%
-	select(StratumID, SecondaryStratumID, zone, StateClassID, pixels, scarea_km2) %>%
+	dplyr::select(StratumID, SecondaryStratumID, zone, StateClassID, pixels, scarea_km2) %>%
 	as.data.frame()
 
 			### Convert Fire shapefile to annual rasters ### 
