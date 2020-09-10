@@ -13,7 +13,7 @@ The manuscript was submitted for publication in the IOP journal *Environmental R
 
 * __Climate__ contains raster TIFF files of current climate and projected future climate (mid- and end of century) based on statistically downscaled CMIP5 GCM data. 
 
-* __Fire__ contains a spatial database of fire occurence and fire extent in shapefile format for the years 1999-2018, as well as R code used to calculate annual burned area by island, ignition probabilities, and fire size distribution. 
+* __Fire__ contains a spatial database of fire occurence and fire extent in shapefile format for the years 1999-2019, as well as R code used to calculate annual burned area by island, ignition probabilities, and fire size distribution. 
 
 * __FlowMultipliers__ contains R code to calculate growth multipliers based on projected climate change, decomposition multipliers based on projected climate change using a Q<sub>10</sub> temperature coefficient, and growth multipliers based on projected changes in atmospheric CO<sub>2</sub> concentration using different levels of a CO<sub>2</sub> fertilization effect. 
 
