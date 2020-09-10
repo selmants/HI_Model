@@ -88,6 +88,19 @@ Each of the four unique scenarios were run for 90 years at an annual timestep an
 knitr::include_graphics("./fig_images/fig2_Cstocks.png")
 ```
 
+Net primary production (NPP) declined across all four scenarios (Fig. 3). The combination of high radiative forcing (RCP 8.5) and high land-use change led to the steepest decline in NPP over time, driven by intense long-term drying on the leeward sides of islands under RCP 8.5 (Fig. S4) and reduction of forest and shrubland land area in the high land use scenario (Fig. S5). In contrast to NPP, heterotrophic respiration (Rh) was higher under RCP 8.5 than under RCP 4.5 (Fig. 3) because of more intense warming over time (Fig. S4). High land-use change lowered Rh (Fig. 3) because of reduced forest and shrubland land area (Fig. S5), similar to trends in NPP. Carbon fluxes to the atmosphere triggered by land use, land-use change, and fire were largely independent of changes in climate, with greater variability in these fluxes across Monte Carlo iterations in the high land-use scenario (Fig. 3). 
+
+```{r fig.align = 'center', out.width = "99%", fig.cap = "Projected changes in net primary production (NPP), heterotrophic respiration (Rh) and carbon fluxes induced by land use and land-use change for the seven main Hawaiian Islands. Solid lines indicate the mean of 30 Monte Carlo realizations for each scenario, with shaded areas indicating the minimum and maximum range of Monte Carlo realizations."}
+knitr::include_graphics("./fig_images/fig3_Cflows.png")
+```
+
+
+
+
+
+
+
+
 ## Discussion
 
 ## Conclusion
