@@ -1,0 +1,45 @@
+---
+title: "Supplemental material: Ecosystem carbon balance in the Hawaiian Islands under different scenarios of future climate and land use change"
+bibliography: HI_Model.bib
+csl: iop.csl
+fontsize: 12pt
+geometry: margin=1in
+header-includes:
+   - \usepackage{lineno}
+   - \linenumbers
+   - \usepackage{setspace}
+   - \doublespacing
+output: 
+  pdf_document: 
+    latex_engine: xelatex
+urlcolor: blue
+
+---
+
+```{r setup, include=FALSE}
+options(tinytex.verbose = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
+```
+Paul C. Selmants^1,6^, Benjamin M. Sleeter^2^,  Jinxun Liu^1^, Tamara S. Wilson^1^,  
+Parker C. Trauernicht^3^, Abby G. Frazier^4^, Gregory P. Asner^5^  
+
+**Affiliations:**  
+^1^U.S. Geological Survey, Moffett Field, CA, USA   
+^2^U.S. Geological Survey, Seattle, WA, USA  
+^3^University of Hawai`i at Mānoa, Honolulu, HI, USA  
+^4^The East-West Center, Honolulu, HI, USA  
+^5^Arizona State University, Tempe, AZ, USA  
+^6^Author to whom correspondence should be addressed  
+  
+
+**Email:** pselmants@usgs.gov  
+
+**Running title:** Hawaii carbon balance  
+**Keywords:** land use, climate change, carbon balance, Hawaii, scenarios, disturbance, ecosystem model  
+  
+  
+**Date:** `r format(Sys.time(), '%B %d, %Y')`  
+   
+
+
+\pagebreak
