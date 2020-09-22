@@ -15,7 +15,7 @@ library(cowplot)
 CFE_Cstocks <- read.csv("./HI_Cstocks/Cstocks_CFE.csv", stringsAsFactors = FALSE) %>%
 	select(-Scenario)
 # read in LUCAS C stocks by scenario and filter on RCP85High scenario 
-Cstocks <- read.csv("./HI_Cstocks/Cstocks_Island.csv", stringsAsFactors = FALSE)	%>%
+Cstocks <- read.csv("./HI_Cstocks/Cstocks_Island.csv", stringsAsFactors = FALSE) %>%
 	filter(Scenario == "RCP85High") %>%
 	mutate(CFE_rate = 0) %>%
 	select(CFE_rate, Timestep:Amount)
@@ -24,7 +24,8 @@ Cstocks <- read.csv("./HI_Cstocks/Cstocks_Island.csv", stringsAsFactors = FALSE)
 cfe_baseflow <- read.csv("./HI_Cflows/BaseFlows_CFE.csv", stringsAsFactors = FALSE) %>%
 	select(-Scenario)
 # read in CFE C loss data (transition, fire, harvest)
-cfe_closs <- read.csv("./HI_Cflows/TransitHarvFlows_CFE.csv", stringsAsFactors = FALSE) %>%
+cfe_closs <- read.csv("./HI_Cflows/TransitHarvFlows_CFE.csv", 
+	stringsAsFactors = FALSE) %>%
 	select(-Scenario)
 # read in zero CFE base flow data 
 baseflowzero <- read.csv("./HI_Cflows/BaseFlows.csv", stringsAsFactors = FALSE) %>%
@@ -111,6 +112,7 @@ LUCloss <- cfeCloss %>%
 	group_by(CFE_Rate, Timestep, Iteration) %>%
 	summarize(LUCloss = sum(Amount)/1000) %>%
 	as.data.frame()
+	
 #Join NPP and C loss dataframes together
 cbal <- left_join(NPP, Rh) %>%
 	left_join(., Leach) %>%
