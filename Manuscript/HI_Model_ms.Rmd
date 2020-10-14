@@ -46,10 +46,10 @@ Clay Trauernicht^3^, Abby G. Frazier^4^, Gregory P. Asner^5^
 \pagebreak
 
 ## Abstract
-The State of Hawai`i passed legislation to be carbon neutral by 2045, a goal that partly depends on carbon sequestration by terrestrial ecosystems. However, there is considerable uncertainty surrounding the future direction and magnitude of the land carbon sink in the Hawaiian Islands. We used simulation modeling to assess how projected future changes in climate and land use will influence ecosystem carbon balance in the Hawaiian Islands under all combinations of two land-use scenarios (low and high) and two radiative forcing scenarios (RCPs 4.5 and 8.5) over a 90-year timespan from 2010-2100. Collectively, ecocystems of the Hawaiian Islands acted as a net carbon sink under low radiative forcing throughout the 90-year simulation period, but carbon sink strength capacity was greatest under the combination of low radiative forcing and low land-use change. In contrast, Hawaiian terrestrial ecosystems transitioned from a net sink to a net source of CO~2~ to the atmosphere under high radiative forcing, with high land-use accelerating this transition and exacerbating net carbon loss. A sensitivity test of the CO~2~ fertilization effect on plant productivity revealed it to be a major source of uncertainty in projections of ecosystem carbon balance. Reconciling this uncertainty in how net photosynthesis will respond to rising atmospheric CO~2~ will be essential to constrain models used to evaluate the effectiveness of ecosystem‐based climate mitigation strategies.   
+The State of Hawai`i passed legislation to be carbon neutral by 2045, a goal that will partly depends on carbon sequestration by terrestrial ecosystems. However, there is considerable uncertainty surrounding the future direction and magnitude of the land carbon sink in the Hawaiian Islands. We used simulation modeling to assess how projected future changes in climate and land use will influence ecosystem carbon balance in the Hawaiian Islands under all combinations of two radiative forcing scenarios (RCPs 4.5 and 8.5) and two land-use scenarios (low and high) over a 90-year timespan from 2010-2100. Collectively, ecoystems of the Hawaiian Islands acted as a net carbon sink under low radiative forcing throughout the 90-year simulation period, but carbon sink strength was greatest under the combination of low radiative forcing and low land-use change. In contrast, Hawaiian terrestrial ecosystems transitioned from a net sink to a net source of CO~2~ to the atmosphere under high radiative forcing, with high land-use accelerating this transition and exacerbating net carbon loss. A sensitivity test of the CO~2~ fertilization effect on plant productivity revealed it to be a major source of uncertainty in projections of ecosystem carbon balance. Reconciling this uncertainty in how net photosynthesis will respond to rising atmospheric CO~2~ will be essential to realistically constrain simulation models used to evaluate the effectiveness of ecosystem‐based climate mitigation strategies.   
 
 ## Introduction
-Terrestrial ecosystems are a major sink for atmospheric carbon dioxide (CO~2~), removing ~30% of human emissions on an annual basis [Friedlingstein_global_2019]. 
+Terrestrial ecosystems are a major sink for atmospheric carbon dioxide (CO~2~), removing ~30% of human emissions on an annual basis [@friedlingstein_global_2019].  
 
 The main Hawaiian Islands are a complex mosaic of natural and human-dominated landscapes overlain by steep climate gradients across relatively short distances.   
 
@@ -105,7 +105,7 @@ Net biome productivity (NBP) averaged approximately 0.6 Tg C y^-1^ at the start 
 knitr::include_graphics("./fig_images/fig4_NBPpanels.png") 
 ```
 
-```{r fig.align = 'center', out.width = "99%", fig.cap = "Projected changes in cumulative net biome productivity (NBP) for the seven main Hawaiian Islands when switching from high to low land-use change scenario under each radiative forcing scenario (top panel) and when switching from RCP 8.5 to RCP 4.5 radiative forcing scenarios under each land-use scenario (bottom panel). Box plots indicate the median (vertical black line), 25th and 75th percentiles (colored boxes), 10th and 90th percentiles (thin horizontal lines), and values outside of this range (black circles). Note the different scales for the x-axis in each panel."}
+```{r fig.align = 'center', out.width = "99%", fig.cap = "Projected changes in cumulative net biome productivity (NBP) for the seven main Hawaiian Islands when switching from the high to low land-use change scenario under each radiative forcing scenario (top panel) and when switching from the high (RCP 8.5) to low (RCP 4.5) radiative forcing scenario under each land-use scenario (bottom panel). Box plots indicate the median (vertical black line), 25th and 75th percentiles (colored boxes), 10th and 90th percentiles (thin horizontal lines), and values outside of this range (black circles). Note the different x-axis scales in each panel."}
 knitr::include_graphics("./fig_images/fig5_cumdNBP.png") 
 ```
 
@@ -127,7 +127,7 @@ This study was funded by the U.S. Geological Survey Biological Carbon Sequestrat
 
 ## Data Availability
 
-Tabular model output data and metadata are available in machine readable format from a USGS ScienceBase data repository at https://doi.org/10.5066/P9AWLFKZ. Model input data and R code used to format input data, summarize output data, and compile this manuscript are available from a GitHub repository at https://github.com/selmants/HI_Model. 
+Tabular model output data and metadata are available in machine readable format from the USGS ScienceBase data repository at https://doi.org/10.5066/P9AWLFKZ. Model input data and R code used to format input data, summarize output data, and compile this manuscript are available from a GitHub repository at https://github.com/selmants/HI_Model.
 
 ## ORCID
 
