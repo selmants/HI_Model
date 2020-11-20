@@ -1,0 +1,18 @@
+---
+title: "Ecosystem carbon balance in the Hawaiian Islands under different scenarios of future climate and land use change"
+bibliography: HI_Model.bib
+csl: iop.csl
+fontsize: 12pt
+geometry: margin=1in
+output: 
+  word_document:
+    reference_docx: word_styles.docx 
+urlcolor: blue
+nocite: |
+  @jacobi_map_2017
+---
+
+```{r setup, include=FALSE}
+options(tinytex.verbose = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
+```
