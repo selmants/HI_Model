@@ -46,3 +46,17 @@ Parker C. Trauernicht^3^, Abby G. Frazier^4^, Gregory P. Asner^5^
 
 \pagebreak
 
+## Moisture Zones
+
+THree moisture zones used to stratify 
+
+```{r fig.align = 'center', out.width = "99%", fig.cap = "Moisture zones of the seven main Hawaiian Islands, adapted from Jacobi et al (2017)."}
+knitr::include_graphics("./fig_images/figS1_MZ.png")
+```
+
+##Wildland Fire
+
+
+##Climate
+
+##Change in State Class Area

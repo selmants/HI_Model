@@ -17,8 +17,12 @@ The manuscript was submitted for publication in the IOP journal *Environmental R
 
 * __FlowMultipliers__ contains R code to calculate growth multipliers based on projected climate change using an empirical NPP model, decomposition multipliers based on projected climate change using a Q<sub>10</sub> temperature coefficient, and growth multipliers based on projected changes in atmospheric CO<sub>2</sub> concentration using different levels of a CO<sub>2</sub> fertilization effect. 
 
-* __Transitions__ contains historical land cover change data, population projections, and R code used to create Transition Pathways and Transition Targets for each of the two land-use change scenarios. 
-
 * __InputData__ contains input data used to parameterize the model, including Flow Pathways, State Attribute Values, Flow Multipliers, Transition Targets, Transition Pathways, and Spatial Multipliers for growth, fire, and transitions. 
 
 * __Manuscript__ contains R code used to create figures and the R Markdown manuscript file, as well as a bibTeX file for references. 
+
+*__MOD17_NPP__ contains geoTIFF files of annual (2010-2019) NPP estimates for the main Hawaiian Islands from the MODIS net primary production (MOD17) data product, as well as R code used to sum values into annual statewide estimates. These data were used to validate NPP estimates from the Hawaiʻi LUCAS model.  
+
+* __Transitions__ contains historical land cover change data, population projections, and R code used to create Transition Pathways and Transition Targets for each of the two land-use change scenarios. 
+
+
