@@ -129,7 +129,7 @@ knitr::include_graphics("./fig_images/fig6_cfe.png")
 
 ## Acknowledgements
 
-This study was funded by the U.S. Geological Survey Biological Carbon Sequestration Program. Thanks to Leonardo Frid and Colin Daniel of ApexRMS for assistance with SyncroSim software and to Nicholas Koch of Forest Solutions, Inc. for information on eucalyptus harvesting in Hawaiʻi. Thanks also to Christian Giardina and Zhiliang Zhu for making this project possible. Any use of trade, firm, or product names is for descriptive purposes only and does not imply endorsement by the U.S. Government.
+This study was funded by the U.S. Geological Survey Biological Carbon Sequestration Program. Thanks to Leonardo Frid and Colin Daniel of ApexRMS for assistance with SyncroSim software, Nicholas Koch of Forest Solutions, Inc. for information on eucalyptus harvesting in Hawaiʻi, and Caroline Conrad for help with Google Earth Engine scripting. Thanks also to Christian Giardina and Zhiliang Zhu for making this project possible. Any use of trade, firm, or product names is for descriptive purposes only and does not imply endorsement by the U.S. Government. 
 
 ## Data Availability
 
