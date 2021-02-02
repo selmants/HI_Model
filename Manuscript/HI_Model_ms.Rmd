@@ -124,7 +124,7 @@ knitr::include_graphics("./fig_images/fig6_cfe.png")
 
 ## Discussion
 
-Over the last decade, terrestrial ecosystems of the Hawaiian Islands have been a consistent net sink for atmospheric carbon. Net biome productivity (NBP) averaged 0.64 TgC y^-1^ and ranged from 0.46 to 0.88 TgC y^-1^ across all scenarios for the time period 2011-2019. 
+Over the last decade, we estimate that terrestrial ecosystems of the Hawaiian Islands have been a consistent net sink for atmospheric carbon (figure 4). Net biome productivity (NBP) averaged 0.64 TgC y^-1^ and ranged from 0.46 to 0.88 TgC y^-1^ across all scenarios for the time period 2011-2019. Based on these estimates, terrestrial ecosystems offset approximately 13% of 2015 CO~2~ emissions from energy production and transportation (5.04 TgC), the Stateʻs largest source of greenhouse gas emissions [@hawaii_inventory_2019]. Our model mean NBP estimate for 2011-2019 agrees well with the State of Hawaiʻi's 2015 net carbon sink estimate of 0.66 TgC y^1^ from agriculture, forestry, and other land uses [@hawaii_inventory_2019]. 
 
 
 ## Conclusion
