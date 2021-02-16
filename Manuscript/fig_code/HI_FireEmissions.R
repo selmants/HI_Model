@@ -23,3 +23,4 @@ fire <- read.csv("TransitHarvFlows.csv", stringsAsFactors = FALSE) %>%
 		as.data.frame() %>%
 		select(Scenario, Timestep, Iteration, Island = FromSecondaryStratumID,
 			fire_emiss)
+

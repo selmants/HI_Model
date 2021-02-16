@@ -10,7 +10,7 @@ library(raster)
 library(dplyr)
 
 # read in Fire Perimeters shapefile
-fires <- shapefile("./data/base/Hawaii Fire Perimeters 1999-2018.shp")
+fires <- shapefile("./Fire/data/base/2019_1999_Hawaii_Fire_Perimeters.shp")
 
 # calculate area of each polygon in km2
 fires$area_km2 <- area(fires)/1000000
