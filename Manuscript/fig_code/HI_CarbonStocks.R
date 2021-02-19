@@ -9,7 +9,7 @@ library(dplyr)
 library(ggplot2)
 library(cowplot)
 
-## Download LUCAS model output data from USGS ScienceBase: 
+## Access LUCAS model output data from USGS ScienceBase: 
 ## https://doi.org/10.5066/P9AWLFKZ
 
 # read Hawaii LUCAS model C stock output data into R

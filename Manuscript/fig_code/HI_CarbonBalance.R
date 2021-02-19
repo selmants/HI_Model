@@ -175,7 +175,7 @@ draw_label(expression(Net~biome~productivity~(Tg~C~y^{-1})),
 # save two panel NBP fig as .png file
 ggsave("fig4_NBPpanels.png", width = 7, height = 6.5)
 
-# calculate cumulative ∆NBP when swticking land use & climate scenarios
+# calculate cumulative ∆NBP when swiching land use & climate scenarios
 dcumNBP <- cbal %>%
 	group_by(Scenario, Iteration) %>%
 	summarize(cumNBP = sum(NBP)/1000) %>%
