@@ -63,18 +63,6 @@ litterfall <- rawlitc %>%
 		FlowTypeID = 'Litterfall') %>%
 	filter(FromStateClassID != 'Agriculture:All') %>%
 	as.data.frame(.)
-#calculate multipliers for soil CO2 emission as proportion of 
-#current year litter decay (SOC Input)
-soilemiss <- flux %>%
-	filter(Flux == 'soc2co2') %>% 
-	mutate(turnover = Value/lit2soc$Value) %>%
-	group_by(FromStratumID, FromStateClassID) %>%
-	summarize(Multiplier = mean(turnover)) %>%
-	mutate(FromStockTypeID = 'Soil',
-		ToStockTypeID = 'Atmosphere',
-		StateAttributeTypeID = 'SOC Input',
-		FlowTypeID = 'Emission (soil)') %>%
-	as.data.frame(.)
 
 #calculate soil CO2 emission multipliers as 
 # a proportion of current year NPP
@@ -87,19 +75,6 @@ soilemissNPP <- flux %>%
 		ToStockTypeID = 'Atmosphere',
 		StateAttributeTypeID = 'NPP',
 		FlowTypeID = 'Emission (soil)') %>%
-	as.data.frame(.)
-
-#calculate multipliers for leaching as proportion 
-#of current year litter decay (SOC Input)
-leaching <- flux %>%
-	filter(Flux == 'yrleach') %>%
-	mutate(turnover = Value/(lit2soc$Value)) %>%
-	group_by(FromStratumID, FromStateClassID) %>%
-	summarize(Multiplier = mean(turnover)) %>%
-	mutate(FromStockTypeID = 'Soil',
-		ToStockTypeID = 'Aquatic',
-		StateAttributeTypeID = 'SOC Input',
-		FlowTypeID = 'Leaching') %>%
 	as.data.frame(.)
 
 # calculate leaching multipliers as
