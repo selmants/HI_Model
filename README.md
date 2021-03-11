@@ -21,8 +21,6 @@ The manuscript was submitted for publication in the IOP journal *Environmental R
 
 * __Manuscript__ contains R code used to create figures and the R Markdown manuscript file, as well as a bibTeX file for references. 
 
-* __MOD17_NPP__ contains geoTIFF files of annual (2010-2019) NPP estimates for the main Hawaiian Islands from the MODIS net primary production (MOD17) data product, as well as R code used to sum values into annual statewide estimates. These data were used to validate NPP estimates from the Hawaiʻi LUCAS model.  
-
 * __Transitions__ contains historical land cover change data, population projections, and R code used to create Transition Pathways and Transition Targets for each of the two land-use change scenarios. 
 
 
