@@ -61,9 +61,12 @@ This study used a new spatial database of wildland fire perimeters on the main H
 ```{r fig.align = 'center', out.width = "99%", fig.cap = "Annual area burned by wildland fire in the State of Hawaiʻi from 1999-2019, summed by year across the seven main Hawaiian Islands (A) and within each of the four largest islands (B). The dashed horizontal line in (A) represents the median area burned from 1999-2019."}
 knitr::include_graphics("./fig_images/figS2_AnnualAreaBurned.png")
 ```
+
+\pagebreak
+
 ## Climate
 
-Spatially explicit contemporary mean annual temperature and rainfall data for the main Hawaiian Islands at 250-m resolution (Figure S3) are from @giambelluca_online_2013 and @giambelluca_evapotranspiration_2014. Spatially explicit projections of changes in annual temperature and rainfall by the year 2100 were developed using statistically downscaled CMIP5 climate projections for the Hawaiian Islands from @timm_statistical_2015 and @timm_future_2017 under RCPs 4.5 and 8.5 (Figure S5). 
+Spatially explicit contemporary mean annual temperature and rainfall data for the main Hawaiian Islands at 250-m resolution (Figure S3) are from @giambelluca_online_2013 and @giambelluca_evapotranspiration_2014. Spatially explicit projections of changes in annual temperature and rainfall by the year 2100 (Figure S4) were developed using statistically downscaled CMIP5 climate projections for the Hawaiian Islands from @timm_statistical_2015 and @timm_future_2017 under RCPs 4.5 and 8.5. 
 
 ```{r fig.align = 'center', out.width = "95%", fig.cap = "Mean annual temperature (top panel) and mean annual rainfall (bottom panel) for the seven main Hawaiian Islands. Data from Giambelluca \\textit{et al.} (2013) and Giambelluca \\textit{et al.} (2014)."}
 knitr::include_graphics("./fig_images/figS3_CurrentClimate.png")
@@ -73,9 +76,12 @@ knitr::include_graphics("./fig_images/figS4_FutureClimate.png")
 ```
 ## Change in State Class Area
 
-Projections of total land area covered by each State Class were summed by year and Monte Carlo iteration across the seven main Hawaiian Islands from LUCAS model output data.
+Projections of total land area covered by each of five State Classes (Agriculture, Developed, Forest, Grassland and Shrubland) were summed by year and Monte Carlo iteration across the seven main Hawaiian Islands for each of two land use scenarios  (low and high; Figure S5).
 
 ```{r fig.align = 'center', out.width = "99%", fig.cap = "Projections of total land area by year for each of five State Classes in the seven main Hawaiian Islands (Agriculture, Developed, Forest, Grassland, and Shrubland) under low and high land use change scenarios for the period 2010-2100. Solid lines represent the mean of 30 Monte Carlo realizations and shaded areas represent minimum and maximum Monte Carlo values."}
 knitr::include_graphics("./fig_images/figS5_StateClassArea.png")
 ```
+
+\pagebreak
+
 ## References

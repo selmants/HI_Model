@@ -24,3 +24,11 @@ fire <- read.csv("TransitHarvFlows.csv", stringsAsFactors = FALSE) %>%
 		select(Scenario, Timestep, Iteration, Island = FromSecondaryStratumID,
 			fire_emiss)
 
+# Summarize mean annual fire emissions statewide 
+fire_state <- fire %>%
+	group_by(Scenario, Timestep, Iteration) %>%
+	summarize(emiss = sum(fire_emiss)) %>%
+	group_by(Scenario, Timestep) %>%
+	summarize(mean_emiss = mean(emiss),
+		min_emiss = min(emiss),
+		max_emiss = max(emiss))
