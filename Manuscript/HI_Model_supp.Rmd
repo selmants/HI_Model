@@ -56,29 +56,28 @@ knitr::include_graphics("./fig_images/figS1_MZ.png")
 ```
 ## Wildland Fire
 
-This study used a new spatial database of wildland fire perimeters on the main Hawaiian Islands from 1999-2019 to calculate annual area burned (Figure S2), wildland fire probabilities by Moisture Zone and State Class, and wildland fire size distributions. This new wildland fire spatial database compiles prior mapping efforts and data collections with new fire perimeter data mapped directly by Dr. Clay Trauernicht in the Department of Natural Resources and Environmental Management at the University of Hawaiʻi at Mānoa. The goal of this effort was to locate and map all fires greater than or equal to 20 hectares, but some smaller fires were included as detected in imagery. Fire perimeters for the years 2002-2011 were primarily from the U.S. Geological Survey's Monitoring Trends in Burn Severity (MTBS; https://www.mtbs.gov). Hawaii Wildfire Management Organization (www.hawaiiwildfire.org) provided ground-based, GPS-mapped fire perimeters primarily from the Kona and Kohala regions of Hawaiʻi Island. The U.S. National Park Service provided ground-based, GPS-mapped fires records from Hawaiʻi Volcanoes National Park. The Oʻahu Army Natural Resource Program provided ground-based, GPS-mapped fires on Oʻahu. All other fires were mapped directly by Dr. Trauernicht using LANDSAT and Sentinel-2 satellite imagery. For 2002-2011, USGS MTBS data were prioritized in the case of any duplicate record. Dr. Trauernicht mapped all fires from 2012 onwards in addition to filling missing records, where possible, using LANDSAT or Sentinel-2 imagery. 
+This study used a new spatial database of wildland fire perimeters on the main Hawaiian Islands from 1999-2019 to calculate annual area burned (Figure S2), wildland fire probabilities by Moisture Zone and State Class, and wildland fire size distributions. This new database compiles prior mapping efforts and data collections with new fire perimeter data mapped directly by Dr. Clay Trauernicht in the Department of Natural Resources and Environmental Management at the University of Hawaiʻi at Mānoa. The goal of this effort was to locate and map all fires greater than or equal to 20 hectares, but some smaller fires were included as detected in imagery. Fire perimeters for the years 2002-2011 were primarily from the U.S. Geological Survey's Monitoring Trends in Burn Severity (MTBS; https://www.mtbs.gov). The Hawaii Wildfire Management Organization (www.hawaiiwildfire.org) provided ground-based, GPS-mapped fire perimeters from Hawaiʻi Island, primiarily in the Kona and Kohala regions. The U.S. National Park Service provided ground-based, GPS-mapped fire records from Hawaiʻi Volcanoes National Park. The Oʻahu Army Natural Resource Program provided ground-based, GPS-mapped fire records on Oʻahu. All other fires were mapped directly by Dr. Trauernicht using LANDSAT and Sentinel-2 satellite imagery. Data from USGS MTBS were prioritized for the years 2002-2011 in the case of duplicate records.
 
-```{r fig.align = 'center', out.width = "99%", fig.cap = "Annual area burned by wildland fire in the State of Hawaiʻi from 1999-2019, summed by year across the seven main Hawaiian Islands (A) and within each of the four largest islands (B). The dashed horizontal line in (A) represents the median area burned from 1999-2019."}
+```{r fig.align = 'center', out.width = "99%", fig.cap = "Supplemental - Annual area burned by wildland fire in the State of Hawaiʻi from 1999-2019, summed by year across the seven main Hawaiian Islands (A) and within each of the four largest islands (B). The dashed horizontal line in (A) represents the median area burned from 1999-2019."}
 knitr::include_graphics("./fig_images/figS2_AnnualAreaBurned.png")
 ```
-
 \pagebreak
 
 ## Climate
 
 Spatially explicit contemporary mean annual temperature and rainfall data for the main Hawaiian Islands at 250-m resolution (Figure S3) are from @giambelluca_online_2013 and @giambelluca_evapotranspiration_2014. Spatially explicit projections of changes in annual temperature and rainfall by the year 2100 (Figure S4) were developed using statistically downscaled CMIP5 climate projections for the Hawaiian Islands from @timm_statistical_2015 and @timm_future_2017 under RCPs 4.5 and 8.5. 
 
-```{r fig.align = 'center', out.width = "95%", fig.cap = "Mean annual temperature (top panel) and mean annual rainfall (bottom panel) for the seven main Hawaiian Islands. Data from Giambelluca \\textit{et al.} (2013) and Giambelluca \\textit{et al.} (2014)."}
+```{r fig.align = 'center', out.width = "95%", fig.cap = "Supplemental - Mean annual temperature (top panel) and mean annual rainfall (bottom panel) for the seven main Hawaiian Islands. Data from Giambelluca \\textit{et al.} (2013) and Giambelluca \\textit{et al.} (2014)."}
 knitr::include_graphics("./fig_images/figS3_CurrentClimate.png")
 ```
-```{r fig.align = 'center', out.width = "99%", fig.cap = "Projected change in mean annual temperature (top panels) and mean annual rainfall (bottom panels) by end of century under RCPs 4.5 and 8.5 (top panels) based on statistical downscaling of an ensemble of climate models (CMIP5)."}
+```{r fig.align = 'center', out.width = "99%", fig.cap = "Supplemental - Projected change in mean annual temperature (top panels) and mean annual rainfall (bottom panels) by 2100 under RCP 4.5 and RCP 8.5 based on statistical downscaling of an ensemble of climate models (CMIP5)."}
 knitr::include_graphics("./fig_images/figS4_FutureClimate.png")
 ```
 ## Change in State Class Area
 
-Projections of total land area covered by each of five State Classes (Agriculture, Developed, Forest, Grassland and Shrubland) were summed by year and Monte Carlo iteration across the seven main Hawaiian Islands for each of two land use scenarios  (low and high; Figure S5).
+Projections of total land area covered by each of five State Classes (Agriculture, Developed, Forest, Grassland and Shrubland) were summed by year and Monte Carlo iteration across the seven main Hawaiian Islands for each of two land use scenarios (low and high; Figure S5).
 
-```{r fig.align = 'center', out.width = "99%", fig.cap = "Projections of total land area by year for each of five State Classes in the seven main Hawaiian Islands (Agriculture, Developed, Forest, Grassland, and Shrubland) under low and high land use change scenarios for the period 2010-2100. Solid lines represent the mean of 30 Monte Carlo realizations and shaded areas represent minimum and maximum Monte Carlo values."}
+```{r fig.align = 'center', out.width = "99%", fig.cap = "Supplemental - Projections of total land area by year for each of five State Classes in the seven main Hawaiian Islands (Agriculture, Developed, Forest, Grassland, and Shrubland) under low and high land use change scenarios for the period 2010-2100. Solid lines represent the mean of 30 Monte Carlo realizations and shaded areas represent minimum and maximum Monte Carlo values."}
 knitr::include_graphics("./fig_images/figS5_StateClassArea.png")
 ```
 
