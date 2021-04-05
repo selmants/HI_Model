@@ -2,14 +2,14 @@
 
 Input data, R scripts, and manuscript files for LUCAS model projections of ecosystem carbon balance in the Hawaiian Islands under different scenarios of climate and land use change. 
 
-LUCAS model summarized output data in machine readable format is available at https://doi.org/10.5066/P9AWLFKZ.
+LUCAS model summarized output data available in machine readable format at https://doi.org/10.5066/P9AWLFKZ.
  
 
-The manuscript was submitted for publication in the IOP journal *Environmental Research Letters*.  
+Manuscript submitted for publication to the IOP journal *Environmental Research Letters* on 2021-04-05.  
 
 ## Directory Structure
 
-* __CarbonStockFlow_IBIS__ contains IBIS DGVM output data and R code used to create a State Attribute Values table (carbon stocks by Moisture Zone and State Class) and a Flow Pathways table (carbon fluxes to and from stocks) using IBIS data as input. 
+* __Carbon_IBIS__ contains IBIS DGVM output data and R code used to create a State Attribute Values table (carbon stocks by Moisture Zone and State Class) and a Flow Pathways table (carbon fluxes to and from stocks) using IBIS data as input. 
 
 * __Climate__ contains raster TIFF files of current climate and projected future climate (mid- and end of century) based on statistically downscaled CMIP5 GCM data. 
 
