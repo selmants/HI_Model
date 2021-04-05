@@ -1,11 +1,10 @@
 # HI_Model
 
-Input data, R scripts, and manuscript files for LUCAS model projections of ecosystem carbon balance in the Hawaiian Islands under different scenarios of climate and land use change. 
+Input data, R scripts, and manuscript files for LUCAS model projections of ecosystem carbon balance in the Hawaiian Islands under different scenarios of climate and land use change 
 
-LUCAS model summarized output data available in machine readable format at https://doi.org/10.5066/P9AWLFKZ.
- 
+Machine-readable LUCAS model output data is available at: https://doi.org/10.5066/P9AWLFKZ
 
-Manuscript submitted for publication to the IOP journal *Environmental Research Letters* on 2021-04-05.  
+Manuscript submitted for publication to the IOP journal *Environmental Research Letters* on 2021-04-05  
 
 ## Directory Structure
 
