@@ -1,0 +1,52 @@
+---
+output:
+  pdf_document:
+    citation_package: natbib
+    fig_caption: yes
+    keep_tex: no
+    latex_engine: xelatex
+header-includes:
+   - \linespread{1.05}
+   - \newcommand{\blankline}{\quad\pagebreak[2]}
+   - \usepackage{eso-pic}
+   - \usepackage{graphicx}
+   - \newcommand\BackgroundPic{\put(0,0){\parbox[b][\paperheight]{\paperwidth}{\vfill\centering \includegraphics[width=\paperwidth,height=\paperheight, keepaspectratio]{usgs_response_letterhead.pdf} \vfill }}}
+geometry: top=1in, left=1in, bottom=1in, right=1in
+mainfont: Times New Roman
+fontsize: 12pt
+urlcolor: blue
+---
+
+\AddToShipoutPicture*{\BackgroundPic}
+\pagenumbering{gobble}
+
+`r format(Sys.time(), '%B %d, %Y')`
+
+\blankline
+
+Dear Editors:
+
+\blankline
+
+Please consider our article, "Ecosystem carbon balance in the Hawaiian Islands under different scenarios of climate and land use change", for publication in _Environmental Research Letters_. This article presents results from a stochastic, spatially explicit simulation model used to assess how projected future changes in climate and land use will influence ecosystem carbon balance in the Hawaiian Islands over a 90-year timespan from 2010-2100. Our results represent the first set of Hawaiʻi-specific projections to incorporate multiple land use and climate change scenarios, the first to  extend to the end of the 21st century, and the first to be conducted at sub-kilometer spatial resolution. This article also represents one of very few regional-scale efforts to examine how ecosystem carbon balance responds to different levels of a CO~2~ fertilization effect on net primary productivity. 
+
+Our results are timely given the recent passage of legislation by the State of Hawaiʻi to be carbon neutral by 2045, a goal that will partly depend on carbon sequestration by terrestrial ecosystems. By incorporating the interactive effects of land use and climate change into future projections of ecosystem carbon balance, our model results could serve as baseline projections for the State of Hawaiʻi to evaluate different ecosystem-based climate mitigation strategies. Studies like ours that incorporate stochasticity into spatially explicit simulation models could also provide a framework for the growing number of sub-national jurisdictions that plan to incorporate ecosystem carbon sequestration into their emissions reduction efforts.
+
+We found that local reductions in the intensity of land use change consistently led to an increase in ecosystem carbon sequestration, but to a lesser degree than global climate mitigation through greenhouse gas emissions reductions. We also found that CO~2~ fertilization of NPP was the largest source of uncertainty in long-term projections of ecosystem carbon balance in the Hawaiian Islands, highlighting the need for greater mechanistic understanding of the cascading effects of rising atmospheric CO~2~ on ecosystem carbon sequestration. We believe long-term model projections such as ours will be critical to understanding how future land use and climate change could interact to influence the achievement of climate mitigation goals.
+
+\blankline
+
+Best regards,
+
+
+\raggedright
+Paul C. Selmants 
+\linebreak
+Research Ecologist 
+\linebreak
+U.S. Geological Survey
+
+
+Lots and lots more text, repeating last paragraph of letter here to see what happens on page two. 
+
+We found that local reductions in the intensity of land use change consistently led to an increase in ecosystem carbon sequestration, but to a lesser degree than global climate mitigation through greenhouse gas emissions reductions. We also found that CO~2~ fertilization of NPP was the largest source of uncertainty in long-term projections of ecosystem carbon balance in the Hawaiian Islands, highlighting the need for greater mechanistic understanding of the cascading effects of rising atmospheric CO~2~ on ecosystem carbon sequestration. We believe long-term model projections such as ours will be critical to understanding how future land use and climate change could interact to influence the achievement of climate mitigation goals.
