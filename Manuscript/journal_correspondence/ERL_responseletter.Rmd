@@ -10,7 +10,7 @@ header-includes:
    - \newcommand{\blankline}{\quad\pagebreak[2]}
    - \usepackage{eso-pic}
    - \usepackage{graphicx}
-   - \newcommand\BackgroundPic{\put(0,0){\parbox[b][\paperheight]{\paperwidth}{\vfill\centering \includegraphics[width=\paperwidth,height=\paperheight, keepaspectratio]{usgs_response_letterhead.pdf} \vfill }}}
+   - \newcommand\BackgroundPic{\put(0,0){\parbox[b][\paperheight]{\paperwidth}{\vfill\centering \includegraphics[width=\paperwidth,height=\paperheight, keepaspectratio]{usgs_letterhead.pdf} \vfill }}}
 geometry: top=1in, left=1in, bottom=1in, right=1in
 mainfont: Times New Roman
 fontsize: 12pt
@@ -18,7 +18,7 @@ urlcolor: blue
 ---
 
 \AddToShipoutPicture*{\BackgroundPic}
-\pagenumbering{gobble}
+\pagenumbering{arabic}
 
 `r format(Sys.time(), '%B %d, %Y')`
 
@@ -28,25 +28,101 @@ Dear Editors:
 
 \blankline
 
-Please consider our article, "Ecosystem carbon balance in the Hawaiian Islands under different scenarios of climate and land use change", for publication in _Environmental Research Letters_. This article presents results from a stochastic, spatially explicit simulation model used to assess how projected future changes in climate and land use will influence ecosystem carbon balance in the Hawaiian Islands over a 90-year timespan from 2010-2100. Our results represent the first set of Hawaiʻi-specific projections to incorporate multiple land use and climate change scenarios, the first to  extend to the end of the 21st century, and the first to be conducted at sub-kilometer spatial resolution. This article also represents one of very few regional-scale efforts to examine how ecosystem carbon balance responds to different levels of a CO~2~ fertilization effect on net primary productivity. 
+Please consider this revised version of article ERL-111271, "Ecosystem carbon balance in the Hawaiian Islands under different scenarios of climate and land use change", for publication in _Environmental Research Letters_. We have fully addressed each of the referees’ comments in detail below. Our point-by-point replies immediately follow each referee comment, and we include line numbers of the revised manuscript at the end of each response to identify where we made changes to the text. 
 
-Our results are timely given the recent passage of legislation by the State of Hawaiʻi to be carbon neutral by 2045, a goal that will partly depend on carbon sequestration by terrestrial ecosystems. By incorporating the interactive effects of land use and climate change into future projections of ecosystem carbon balance, our model results could serve as baseline projections for the State of Hawaiʻi to evaluate different ecosystem-based climate mitigation strategies. Studies like ours that incorporate stochasticity into spatially explicit simulation models could also provide a framework for the growing number of sub-national jurisdictions that plan to incorporate ecosystem carbon sequestration into their emissions reduction efforts.
-
-We found that local reductions in the intensity of land use change consistently led to an increase in ecosystem carbon sequestration, but to a lesser degree than global climate mitigation through greenhouse gas emissions reductions. We also found that CO~2~ fertilization of NPP was the largest source of uncertainty in long-term projections of ecosystem carbon balance in the Hawaiian Islands, highlighting the need for greater mechanistic understanding of the cascading effects of rising atmospheric CO~2~ on ecosystem carbon sequestration. We believe long-term model projections such as ours will be critical to understanding how future land use and climate change could interact to influence the achievement of climate mitigation goals.
+Long-term model projections such as ours will be critical to understanding how future land use and climate change may interact to influence the achievement of climate mitigation goals, and so we expect our paper to be of immediate interest to a wide audience of carbon cycle scientists, ecosystem modelers, land managers, and policy makers. We hope you find our revisions and responses to referees’ comments sufficient to merit publication of our manuscript. 
 
 \blankline
 
 Best regards,
 
-
 \raggedright
-Paul C. Selmants 
+Paul C. Selmants, Ph.D. 
 \linebreak
 Research Ecologist 
 \linebreak
 U.S. Geological Survey
 
+## Referee 1, comments to the author:
 
-Lots and lots more text, repeating last paragraph of letter here to see what happens on page two. 
+**The manuscript describes an impressive effort projecting ecosystem carbon balance in the Hawaiian Islands under climate change and land use change scenarios. This assessment of future regional terrestrial carbon dynamics can provide a support to local planning of climate mitigation strategies through ecosystem carbon sequestration. The manuscript is well written and organized. However, more clarification and justification are needed for methodology and assumptions about how future NPP and land cover change is modelled. And also, more details are needed such as maps illustrating how projected change in carbon flux (e.g., NPP and NBP) and carbon pools (live biomass, soil organic soil) is spatially distributed. I have provided detailed comments below.**  
 
-We found that local reductions in the intensity of land use change consistently led to an increase in ecosystem carbon sequestration, but to a lesser degree than global climate mitigation through greenhouse gas emissions reductions. We also found that CO~2~ fertilization of NPP was the largest source of uncertainty in long-term projections of ecosystem carbon balance in the Hawaiian Islands, highlighting the need for greater mechanistic understanding of the cascading effects of rising atmospheric CO~2~ on ecosystem carbon sequestration. We believe long-term model projections such as ours will be critical to understanding how future land use and climate change could interact to influence the achievement of climate mitigation goals.
+**L109, why need to assign each cell a state type? What is consideration for it?**  
+
+**L114, transitions between ‘state type’? Is it ‘land cover classes’? According to the definition of state type as unique combination of moisture zones, islands and land cover classes at L110, is there transition from dry forest and mesic forest in the same island?**  
+ 
+**L123-126, high land use scenario samples historical rate between median and maximum, but why not low land use scenario sample rates between minimum and median? What is the justification that low land use scenario will have rate lower than historical records?**  
+
+**L126, missing description for urbanization rate for high land use scenario.**  
+
+**L133, what transitions can increase forest area such as low land use scenario shown in figure S5? Does tree plantation refer to reforestation or afforestation? If afforestation, what is the source land cover class for this plantation?**  
+
+**L136, it will be helpful to add average rotation cycle corresponding to the 75% and 40% historical harvest rate? Like how soon planted trees will be harvested in low and high land use scenarios.**  
+
+**L137, will wildfire take place only in forests? If so, what is the resulting land cover class? Would it still recover back to forest after a certain time?**
+
+**L140, is state type land cover classes? Since ‘state type’ is defined as combination of moisture zone, island, and land cover type at line 110, how can ‘state type’ be re-combined with moisture zone and island here?**
+
+**L158, moisture zone is included in state type as defined at line L110, isn’t it?**  
+
+**L162, how litter and dead wood pools were initialized?**
+
+ **L161, what is 30-year climate normal come from? Does it have consistent temperature and rainfall distribution with RCP projections during 2010 and 2020? Or is there any bias between 30-year climate normal and RCP projections?**  
+ 
+**L163, figure 2 shows total live biomass in 2010 is about 68 Tg C, but total forest aboveground biomass is estimated as 36 Tg C in Asner et al 2016 which is used for initialization here. Where is the additional 32 Tg C from? What is ratio of aboveground biomass to total live biomass in IBIS?**
+
+**L163, what is calibrated GPP NPP rate? It will be helpful to list out the mean or the range.**  
+
+**L166-168, is similar multiplier also applied to living biomass? If not, will this single NPP multiplier break the equilibrium between NPP and biomass? For example, for a simulation cell, NPP and biomass should reach dynamic equilibrium in IBIS simulation, a given NPP could only support carbon turnover of a certain number of trees. External decease NPP by a multiplier will in turn reduce biomass in order to match it, causing artificial reduction in biomass.**
+
+**Line 173, why assume Rh as ratio of NPP? Is the ratio constant over time and across climate change scenarios? Why not to estimate Rh based on soil moisture, temperature and soil carbon stocks? Because of lack of soil temperature in RCP 4.5 and 8.5? Need more justification for this flux ratio method.**  
+
+**L177-179, are the growth and decay multipliers varied at annual basis? How are multipliers derived for time periods CMIP5 projections do not cover? Such as period between 2020-2049? It is very necessary to include the distribution of these multipliers, are they enhancing or weakening NPP over time at two RCPs?**  
+
+**L182, the empirical model used here to relate NPP to temperature and rainfall is core to projections of carbon balance. It is necessary to present this empirical relationship in the paper, such as what the optimal temperature of NPP is and how it changes with rainfall. For example, figure S4 shows projections of temperature and rain, there should be corresponding projections of NPP change.**  
+
+**L184, what is the temporal coverage and resolution of these climate projections? Do them only cover the period of mid-century (2049-2069) and end-of-century (2070-2099) as described in L179?**  
+
+**L239: is the NPP decrease during 2010-2020 evident in satellite observations? To what extent of this decrease is caused by climate conditions change rather than by forest area changes?**  
+
+**L242. It is misleading to state ‘climate change led to increased Rh over time’ as figure 3 shows decreasing trend of Rh under high land use scenario and two RCP climate change scenarios. It should be revised as something like ‘switching from RCP 4.5 to 8.5 led to increased Rh’.**  
+
+**L244, why the increase in total soil carbon stock (figure 2) will not enhance Rh? Is it due to the assumption made by this work that Rh is only ratio of NPP and latter decrease over time? What are drivers of Rh decrease?**  
+
+**L244, why Rh shows very sharp decrease before 2020 under all land use scenarios with all RCPs, such decrease rate seems to be higher than the rest period. Are these decreases supported by observations?**  
+
+**Line 341, what is the source of ‘Hawai’i-specific climate data’?**  
+
+## Referee 2, comments to the author:
+
+**The manuscript entitled “Ecosystem carbon balance in the Hawaiian Islands under different scenarios of future climate and land use change” is interesting and suitable for publication but several mistakes in the manuscript should be corrected before acceptance.**  
+
+**Specific comments**  
+
+**Authors should carefully recheck the manuscript for the typos and also write the meaning of all acronyms because there are some which are not presented.**  
+
+**All the figures are clearly presented but authors must check all the figure pixels again. Some of them are not very clear.**  
+
+**I suggest that authors check the bibliographic references in the main text and revise the format of documents to meet the requirement of the Journal.**  
+
+**In the abstract, please add more information about the methods of the experiment.**  
+
+**In the abstract, please don't write the same conclusion lines as they were written in the main conclusion section.**  
+
+**Hypothesis should be given. How this work is different from the available literature?**  
+
+**Objectives should be rewritten in detail and comprehensively.**  
+
+**How did the authors perform the calibration and validation process?**  
+
+**How did they select the sensitive parameters of the model that they used?**  
+
+**Discussion, the discussion part is not related to the results part. Why you discuss these? What does it have to do with the result?**    
+
+
+
+
+
+
+
+
