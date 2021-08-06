@@ -29,7 +29,7 @@ Dear Editors:
 
 Please consider this revised version of article ERL-111271, "Ecosystem carbon balance in the Hawaiian Islands under different scenarios of climate and land use change", for publication in _Environmental Research Letters_. We have fully addressed each of the referees’ comments in detail below. Our point-by-point replies immediately follow each referee comment, and we include line numbers of the revised manuscript at the end of each response to identify where we made changes to the text. 
 
-Long-term model projections such as ours will be critical to understanding how future land use and climate change may interact to influence the achievement of climate mitigation goals, and so we expect our paper to be of immediate interest to a wide audience of carbon cycle scientists, ecosystem modelers, land managers, and policy makers. We hope you find the revisions and responses to referees’ comments sufficient to merit publication of our manuscript. 
+Long-term model projections such as ours will be critical to understanding how future land use and climate change may interact to influence the achievement of climate mitigation goals, and so we expect our paper to be of immediate interest to a wide audience of carbon cycle scientists, ecosystem modelers, land managers, and policy makers. We hope you find our revisions and responses to referees’ comments sufficient to merit publication of this manuscript in _Environmental Research Letters_. 
 
 \blankline
 
@@ -46,68 +46,74 @@ U.S. Geological Survey
 
 **The manuscript describes an impressive effort projecting ecosystem carbon balance in the Hawaiian Islands under climate change and land use change scenarios. This assessment of future regional terrestrial carbon dynamics can provide a support to local planning of climate mitigation strategies through ecosystem carbon sequestration. The manuscript is well written and organized. However, more clarification and justification are needed for methodology and assumptions about how future NPP and land cover change is modelled. And also, more details are needed such as maps illustrating how projected change in carbon flux (e.g., NPP and NBP) and carbon pools (live biomass, soil organic soil) is spatially distributed. I have provided detailed comments below.**  
 
-**L109, why need to assign each cell a state type? What is consideration for it?**  
-The state of each cell tracks a range of information about that cell, including land cover class, moisture zone, island, age, and time since transition. This set of information defines the probabilities that each cell can undergo a particular type of transition, as well as how often each of these transitions can occur. We have added text and references to this section and the next that better describes the state of each cell (lines ). 
+**L109, why need to assign each cell a state type? What is consideration for it?**  The state of each cell tracks a range of information about that cell, including land cover class, moisture zone, island, age, and time since transition. This set of information is used to define the probabilities that each cell can undergo a particular type of transition, as well as how often each of these transitions can occur. We have added text and references to this section and the next that better describes the state of each cell (lines ). 
 
 **L114, transitions between ‘state type’? Is it ‘land cover classes’? According to the definition of state type as unique combination of moisture zones, islands and land cover classes at L110, is there transition from dry forest and mesic forest in the same island?**  
 State type in this model is the unique combination of moisture zone, island, and land cover class, as stated on line 110 of the original manuscript. This information affects transition probabilities, such that dry grassland on Hawaiʻi Island has a different probability of transitioning to agriculture than mesic grassland on Oʻahu. We have added text that better defines how state type influences transition probabilities (). 
  
 **L123-126, high land use scenario samples historical rate between median and maximum, but why not low land use scenario sample rates between minimum and median? What is the justification that low land use scenario will have rate lower than historical records?**  
-To quantify the impact of a low land use scenario, rates of land use change were sampled from the lower range of historical rates (median and below, bounded by zero). We have added text that justifies land use change rates sampled from a range lower than historical rates in the low land use scenario (lines xxx - xxx). 
+To quantify the impact of a low land use scenario, rates of agricultural contraction and agricultural expansion were sampled from the lower range of historical rates (median and below, bounded by zero). Setting the lower boundary of agricultural contraction and expansion rates at zero in the low land use scenario allows for the possibility that agricultural land area will stabilize over time, because no change in agricultural land area will occur during one or more timesteps within a given Monte Carlo iteration. We consider this to be a reasonable possibility under a low land use scenario, but the vast majority of timesteps and Monte Carlo iterations will experience change in agricultural land area within the historical range. We have added text that justifies bounding the lower end of agricultural land area change rates with zero rather than the minimum 1992-2010 historical rates in the low land use scenario (lines xxx - xxx). 
 
 **L126, missing description for urbanization rate for high land use scenario.**  
-As the referee themselves point this out in their previous comment, transition rates in the high land use scenario were sampled from uniform distributions bounded by the median and maximum historical rates of agricultural expansion, agricultural contraction, and urbanization for each island. This description is on lines 121-123 of the original manuscript and lines xxx - xxxx of the revised manuscript. No changes were made in response to this comment.  
+As the referee themselves point this out in their previous comment, transition rates in the high land use scenario, including urbanization, were sampled from uniform distributions bounded by the median and maximum historical rates of agricultural expansion, agricultural contraction, and urbanization for each island. This description is on lines 121-123 of the original manuscript and lines xxx - xxxx of the revised manuscript. No changes were made in response to this comment.  
 
-**L133, what transitions can increase forest area such as low land use scenario shown in figure S5? Does tree plantation refer to reforestation or afforestation? If afforestation, what is the source land cover class for this plantation?**  
-
-
+**L133, what transitions can increase forest area such as low land use scenario shown in figure S5? Does tree plantation refer to reforestation or afforestation? If afforestation, what is the source land cover class for this plantation?** 
+Forest area increases in the low land use scenario because of agricultural contraction (i.e., abandonment of previously cultivated land). We have added text to the supplementary that explains the increase in both forest area and grassland area (supplementary lines xxx - xxx). Tree plantation does not refer to reforestation or afforestation. We did not not include expansion of tree plantations as a transition type, and so there is no land cover class that can be converted to tree plantation in either land use scenario. Once harvested, tree plantations can either be replanted to tree plantations or be converted to grassland or agriculture, which partially explains the increase in grassland area in both land use scenarios (Fig. S5). We have added text to the Methods section that describes tree plantation harvest rates and transitions (lines xxx-xxx). The source of all land cover classes, including tree plantations, is the land cover class map depicted in Figure 1, derived from Jacobi et al. (2017). 
 
 **L136, it will be helpful to add average rotation cycle corresponding to the 75% and 40% historical harvest rate? Like how soon planted trees will be harvested in low and high land use scenarios.**  
-We have added text defining the historical harvest rate as (lines xxx - xxxx). 
+We have added text defining the historical harvest rotation rate as between 5-7 years, as well as more detail on how tree plantation area is projected to change under both land use scenarios (lines xxx - xxx). 
 
 **L137, will wildfire take place only in forests? If so, what is the resulting land cover class? Would it still recover back to forest after a certain time?**  
-Wildland fire in Hawaiʻi takes place primarily in non-native grasslands, but can also occur in shrublands and forest. We have added text that describes where wildland fire can occur in the Hawaiian Islands (lines xxx - xxx). 
+Wildland fire in Hawaiʻi primarily ignites in non-native grasslands and shrublands, but can sometimes spread into forests. We have added text that describes where wildland fire occurs in the Hawaiian Islands (lines xxx - xxx). 
 
 **L140, is state type land cover classes? Since ‘state type’ is defined as combination of moisture zone, island, and land cover type at line 110, how can ‘state type’ be re-combined with moisture zone and island here?**  
-We agree that this was a confusing use of terminology. We have changed "state type" to "land cover class" (line xxx). 
+We agree that this was a confusing use of terminology. We have changed "state type" to "land cover class" here (line xxx) and elsewhere throughout the manuscript. 
 
 **L158, moisture zone is included in state type as defined at line L110, isn’t it?**  
-We agree this was, again, a confusing use of terminology. We have omitted "moisture zone" and now only refer to "state type" in this sentence (line xxx). 
+Again, we agree this was a confusing use of terminology. We have omitted "moisture zone" and now only refer to "state type" in this sentence (line xxx) to be consistent with our previously stated definition of "state type" as the unique combination of island, moisture zone, and land cover class. 
 
-**L162, how litter and dead wood pools were initialized?**
+**L162, how litter and dead wood pools were initialized?**  
+We have added text stating that litter and dead wood pools were initialized using values from the IBIS DGVM (lines xxx-xxx). 
 
-
- **L161, what is 30-year climate normal come from? Does it have consistent temperature and rainfall distribution with RCP projections during 2010 and 2020? Or is there any bias between 30-year climate normal and RCP projections?**  
- The 30-year climate normals for precipitation and temperature come from the references cited (Giambelluca et al. 2013, 2014).  
+**L161, what is 30-year climate normal come from? Does it have consistent temperature and rainfall distribution with RCP projections during 2010 and 2020? Or is there any bias between 30-year climate normal and RCP projections?**  
+The contemporary 30-year climate normals for precipitation and temperature come from the references cited (Giambelluca et al. 2013, 2014), as depicted in Supplementary figure 2. We have added text that better describes this (lines xxx-xxx). 
  
 **L163, figure 2 shows total live biomass in 2010 is about 68 Tg C, but total forest aboveground biomass is estimated as 36 Tg C in Asner et al 2016 which is used for initialization here. Where is the additional 32 Tg C from? What is ratio of aboveground biomass to total live biomass in IBIS?**  
-Asner et al. (2016) only quantifies aboveground forest biomass. The additional 32 Tg C comes from belowground forest biomass, as well as total live biomass in grasslands, shrublands, and agriculture. We have added text describing how we estimated belowground forest biomass.  
+Asner et al. (2016) only quantifies aboveground forest biomass. The additional 32 Tg C comes from the sum of belowground forest biomass and total live biomass in grasslands, shrublands, and agriculture. We have added text describing the equation we used to estimate belowground forest biomass, which was then used to calibrate the IBIS DGVM (lines xxx-xxx).   
 
 **L163, what is calibrated GPP NPP rate? It will be helpful to list out the mean or the range.**
-We have added text listing the range and median rate of GPP from the calibration dataset (Kimball et al. 2017) and added a table of mean NPP rates from IBIS for each moisture zone and land cover class (xxx). 
+We have added text (lines xxx-xxx) listing the range and median rate of GPP from the calibration dataset (Kimball et al. 2017) and added a supplementary table of IBIS-derived mean NPP rates for each unique combination of moisture zone and land cover class (Supplementary Table 1).  
 
 **L166-168, is similar multiplier also applied to living biomass? If not, will this single NPP multiplier break the equilibrium between NPP and biomass? For example, for a simulation cell, NPP and biomass should reach dynamic equilibrium in IBIS simulation, a given NPP could only support carbon turnover of a certain number of trees. External decease NPP by a multiplier will in turn reduce biomass in order to match it, causing artificial reduction in biomass.**  
-Biomass already accumulated will not be reduced if NPP declines. Rather, the rate of biomass increase will decline as NPP declines. This is true in our model, as it is in the real world. We have added text that better describes how and why we apply the NPP spatial multiplier (xxx).   
+We have added maps to the supplementary depicting the spatial distribution of stationary NPP multipliers as well as the spatial distribution of NPP that results from the product of IBIS mean NPP values and the NPP spatial multipliers based on the spatial variability of contemporary climate. In our model, as in the real world, a deline in NPP will result in a decline in biomass accumulation, but the biomass that has already accumulated persists and will not somehow be reduced just because growth rates have slowed. We have added text that better describes how and why we apply the NPP spatial multiplier (xxx).   
 
-**Line 173, why assume Rh as ratio of NPP? Is the ratio constant over time and across climate change scenarios? Why not to estimate Rh based on soil moisture, temperature and soil carbon stocks? Because of lack of soil temperature in RCP 4.5 and 8.5? Need more justification for this flux ratio method.**
+**Line 173, why assume Rh as ratio of NPP? Is the ratio constant over time and across climate change scenarios? Why not to estimate Rh based on soil moisture, temperature and soil carbon stocks? Because of lack of soil temperature in RCP 4.5 and 8.5? Need more justification for this flux ratio method.** 
+We have added text and references to this section justifying the fact that plant productivity and ecosystem respiration are highly correlated on annual timescales, and ecosystem respiration tends to scale with carbon inputs to the rhizosphere from photosynthesis (lines xxx). We agree it would be nice to also incorporate gridded annual maps of projected soil moisture and soil temperature, but these data products do not exist for the Hawaiian Islands. 
 
-**L177-179, are the growth and decay multipliers varied at annual basis? How are multipliers derived for time periods CMIP5 projections do not cover? Such as period between 2020-2049? It is very necessary to include the distribution of these multipliers, are they enhancing or weakening NPP over time at two RCPs?**    
+**L177-179, are the growth and decay multipliers varied at annual basis? How are multipliers derived for time periods CMIP5 projections do not cover? Such as period between 2020-2049? It is very necessary to include the distribution of these multipliers, are they enhancing or weakening NPP over time at two RCPs?** 
+Yes, the growth and decay multipliers vary annually. We have added text that describes how growth and decay multipliers were derived for intermediate time periods and how they vary on an annual basis (lines xxx). The NPP trend over time under both RCPs is depicted in Figure 3. We believe this is a much more clear and succinct way to convey changes in NPP than in a series of maps of future projected NPP under each of the four scenarios. Presenting projected future NPP as we do in Figure 3 is consistent with the focus of this paper, which is on statewide trends of ecosystem carbon balance under different climate and land use scenarios.   
 
 **L182, the empirical model used here to relate NPP to temperature and rainfall is core to projections of carbon balance. It is necessary to present this empirical relationship in the paper, such as what the optimal temperature of NPP is and how it changes with rainfall. For example, figure S4 shows projections of temperature and rain, there should be corresponding projections of NPP change.**  
-Projections of NPP change by scenario are presented in Figure 3. 
+Again, projections of NPP change by land use and climate change scenario are presented in Figure 3, which we believe best conveys statewide trends of ecosystem carbon fluxes under different climate and land use scenarios. We have added text to the supplementary that better describes the empirical NPP model (lines xxx). 
 
 **L184, what is the temporal coverage and resolution of these climate projections? Do them only cover the period of mid-century (2049-2069) and end-of-century (2070-2099) as described in L179?**  
-Yes, climate projections only cover the period of mid-century (2049) and end-of-century (2070-2099) as described on line 179 of the original manuscript. We have added text that described how we 
+Yes, climate projections only cover the period of mid-century (2049-2069) and end-of-century (2070-2099) as described on line 179 of the original manuscript. We have added text that describes how to the supplementary climate section that provides more detail on climate projections (lines xxx) No changes were made in response to this comment. 
 
 **L239: is the NPP decrease during 2010-2020 evident in satellite observations? To what extent of this decrease is caused by climate conditions change rather than by forest area changes?**  
+Statewide NPP declined by approximately 2% on average between 2010 and 2020 across all scenarios and Monte Carlo iterations (8.13 Tg y^-1^ to 7.95 Tg y^-1^), and the ranges of statewide NPP estimates for each of these years broadly overlapped (2010 range = 7.96 - 8.28 Tg ^y-1^, 2020 range = 7.85 - 8.1 Tg ^y-1^). This modeled slight decline in NPP over 10 years, which is well within the error range of coarse resolution satellite observations, was due almost entirely to land cover change - which includes but is not limited to forest area change. We have added text that describes this change in NPP over the contemporary (2010-2020) time period (lines xxx-xxx). 
 
-**L242. It is misleading to state ‘climate change led to increased Rh over time’ as figure 3 shows decreasing trend of Rh under high land use scenario and two RCP climate change scenarios. It should be revised as something like ‘switching from RCP 4.5 to 8.5 led to increased Rh’.**  
+**L242. It is misleading to state ‘climate change led to increased Rh over time’ as figure 3 shows decreasing trend of Rh under high land use scenario and two RCP climate change scenarios. It should be revised as something like ‘switching from RCP 4.5 to 8.5 led to increased Rh’.**
+We agree, this phrasing was misleading. We have altered the text  
 
-**L244, why the increase in total soil carbon stock (figure 2) will not enhance Rh? Is it due to the assumption made by this work that Rh is only ratio of NPP and latter decrease over time? What are drivers of Rh decrease?**  
+**L244, why the increase in total soil carbon stock (figure 2) will not enhance Rh? Is it due to the assumption made by this work that Rh is only ratio of NPP and latter decrease over time? What are drivers of Rh decrease?** 
+
+
 
 **L244, why Rh shows very sharp decrease before 2020 under all land use scenarios with all RCPs, such decrease rate seems to be higher than the rest period. Are these decreases supported by observations?**  
+The decrease in Rh before 2020 is driven almost entirely by land use change, specifically the increase in urban area at the expense of agricultural land (supplementary Figure 5). Agriculture has a higher rate of Rh per unit of NPP than other land cover classes, and so Rh declined more than NPP as agricultural land was converted to urban area. We have added text that describes these trends (lines xxx). 
 
-**Line 341, what is the source of ‘Hawai’i-specific climate data’?**  
+**Line 341, what is the source of ‘Hawai’i-specific climate data’?**
+The Hawaiʻi specific climate data is from Giambelluca et al. (2013), Giambelluca (2014), Ellison Timm et al. (2015), and Ellison Timm et al. (2017) - all of which are cited several times throughout the manuscript and are depicted in supplementary figures 3 and 4. We have added citations to these data again here in response to this comment (lines xxx). 
 
 ## Referee 2, comments to the author:
 
@@ -116,24 +122,33 @@ Yes, climate projections only cover the period of mid-century (2049) and end-of-
 **Specific comments**  
 
 **Authors should carefully recheck the manuscript for the typos and also write the meaning of all acronyms because there are some which are not presented.**  
+We have carefully checked the manuscript for typographical errors and corrected them on lines x, y, and z of the revised manuscript. We have also confirmed that all acronyms are spelled out upon initial use. 
 
 **All the figures are clearly presented but authors must check all the figure pixels again. Some of them are not very clear.**  
+We have checked the clarity of all figures by requesting multiple colleagues open the manuscript PDF file on their respective computers. None of these colleagues noted a lack of clarity in the figures. We would be happy to alter these figures if the ERL production team indicates they do not meet journal requirements.  
 
-**I suggest that authors check the bibliographic references in the main text and revise the format of documents to meet the requirement of the Journal.**  
+**I suggest that authors check the bibliographic references in the main text and revise the format of documents to meet the requirement of the Journal.**
+We are using the Institute of Physics (IOP) citation style language (csl), which meets the guidelines for this Journal. No changes were made in response to this comment. 
 
-**In the abstract, please add more information about the methods of the experiment.**  
+**In the abstract, please add more information about the methods of the experiment.**  We have added text to the abstract that provides more information about the methods of this project (lines xxx). 
 
 **In the abstract, please don't write the same conclusion lines as they were written in the main conclusion section.**  
+We have altered the text so that the conclusions in the abstract are not written identically to those in the Conclusions section (lines xxx). 
 
-**Hypothesis should be given. How this work is different from the available literature?**  
+**Hypothesis should be given. How this work is different from the available literature?**
+Since this study does not involve a controlled experiment, we believe a hypothesis statement is unwarranted and that a statement of objectives is sufficient. We describe how this work compares to the available literature in the Discussion section (e.g., lines xxx), as stated in the Author guidelines for this Journal. 
 
-**Objectives should be rewritten in detail and comprehensively.**  
+**Objectives should be rewritten in detail and comprehensively.** 
+We believe we have stated the objectives of this study clearly and succinctly, both in the abstract (lines xxx) and at the end of the Introduction section (lines xxx). That said, we have altered the text to add more detail to our stated objectives (lines xxx-xxx). 
 
-**How did the authors perform the calibration and validation process?**  
+**How did the authors perform the calibration and validation process?**
+We describe calibration in the Methods section on lines xxx and lines xxx. Validation of ecosystem carbon balance estimates in the Hawaiian Islands is  
 
-**How did they select the sensitive parameters of the model that they used?**  
+**How did they select the sensitive parameters of the model that they used?**
+We are unsure exactly what the referee is referrring to in this question, as they do not point to a particular portion of the manuscript. There are a number of parameters in this model, and we describe in detail how they were selected in the Methods section and the Supplementary section. Without further clarification, we do not know how to better respond to this question. No changes were made in response to this comment.  
 
-**Discussion, the discussion part is not related to the results part. Why you discuss these? What does it have to do with the result?**    
+**Discussion, the discussion part is not related to the results part. Why you discuss these? What does it have to do with the result?** 
+We disagree with this referee that our discussion section is unrelated to the results section. We followed the author guidelines for this journal by discussing the significance of the results and comparing them with previous work using relevant references. For example,   
 
 
 

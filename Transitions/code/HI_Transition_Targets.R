@@ -49,7 +49,7 @@ UrbanLow_early <- ddev %>%
 		SecondaryStratumID = island, TransitionGroupID, 
 		Amount, DistributionType, DistributionFrequencyID, 
 		DistributionSD, DistributionMin = min, DistributionMax = ddev_km2y) 
-# Low urbanization transition targes by island for 2045-2070
+# Low urbanization transition targets by island for 2045-2070
 # using zero to 25% of minimum annual population projection per island
 UrbanLow_mid <- ddev %>%
 	group_by(island) %>%

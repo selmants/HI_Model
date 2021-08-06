@@ -43,15 +43,32 @@ knitr::include_graphics("./fig_images/figS2_AnnualAreaBurned.png")
 
 ### Climate
 
-Spatially explicit contemporary mean annual temperature and rainfall data for the main Hawaiian Islands at 250-m resolution (Figure S3) are from @giambelluca_online_2013 and @giambelluca_evapotranspiration_2014. Spatially explicit projections of change in annual temperature and change in annual rainfall by the end of century (2100; Figure S4) were developed using statistically downscaled CMIP5 climate projections for the Hawaiian Islands from @timm_statistical_2015 and @timm_future_2017 under RCP 4.5 and RCP 8.5. 
+Spatially explicit contemporary mean annual temperature and rainfall data (30-year means) for the main Hawaiian Islands at 250-m resolution (Figure S3) are from @giambelluca_online_2013 and @giambelluca_evapotranspiration_2014. Spatially explicit projections of change in annual temperature and change in annual rainfall for mid-century (2049-2069) and end of century (2070-2099; Figure S4) were developed using statistically downscaled CMIP5 climate projections under RCP 4.5 and RCP 8.5 for the Hawaiian Islands from @timm_statistical_2015 and @timm_future_2017. To avoid biases, the modeled present-day (1975–2005) CMIP5 climatology was used to standardize the resulting predictor time series, and the simulated future changes in the predictors were measured relative to their present-day mean states. See @timm_statistical_2015 and @timm_future_2017 for a more detailed description of potential statistical downscaling biases.  
 
-```{r fig.align = 'center', out.width = "95%", fig.cap = "Supplemental - Mean annual temperature (top panel) and mean annual rainfall (bottom panel) for the seven main Hawaiian Islands. Data from Giambelluca \\textit{et al.} (2013) and Giambelluca \\textit{et al.} (2014)."}
+```{r fig.align = 'center', out.width = "95%", fig.cap = "Supplemental - Contemporary 30-year climate normals for mean annual temperature (top panel) and mean annual rainfall (bottom panel) for the seven main Hawaiian Islands. Data from Giambelluca \\textit{et al.} (2013) and Giambelluca \\textit{et al.} (2014)."}
 knitr::include_graphics("./fig_images/figS3_CurrentClimate.png")
 ```
 ```{r fig.align = 'center', out.width = "99%", fig.cap = "Supplemental - Projected change in mean annual temperature (top panels) and mean annual rainfall (bottom panels) by 2100 under RCP 4.5 and RCP 8.5 based on statistical downscaling of an ensemble of climate models (CMIP5)."}
 knitr::include_graphics("./fig_images/figS4_FutureClimate.png")
 ```
 
+### Initializing NPP  
+
+
+
+
+
+```{r}
+library(kableExtra)
+
+ibisnpp <- read.csv("IBISnpp_wide.csv", stringsAsFactors = FALSE)
+kbl(ibisnpp, booktabs = T, caption = "Supplemental - Mean IBIS-derived NPP values by Land Cover and Moisture Zone, in kg of C per square meter per year.") %>%
+   add_header_above(c(" ", "NPP by Moisture Zone" = 3))
+```
+
+```{r fig.align = 'center', out.width = "99%", fig.cap = "Supplemental - Stationary spatial NPP multipliers (top panel) and initial NPP based on the product of mean IBIS-derived NPP values (Table 1) and stationary spatial NPP multipliers (above). Developed and Barren land cover types are excluded from both maps."}
+knitr::include_graphics("./fig_images/figS4_initialNPP.png")
+```
 ### Change in State Class Area
 
 Projections of total land area covered by each of five State Classes (Agriculture, Developed, Forest, Grassland and Shrubland) were summed by year and Monte Carlo iteration across the seven main Hawaiian Islands for each of two land use scenarios (low and high; Figure S5).
