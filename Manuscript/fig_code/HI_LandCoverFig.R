@@ -17,10 +17,11 @@ library(ggplot2)
 # 3 = Plantation	8 = Agriculture
 # 4 = WoodyCrop		9 = Wetland
 # 5 = Barren	   10 = Shrubland
-StateClass <- raster('./InputData/spatial_data/StateClassNew_250m.tif')
+StateClass <- raster(
+    './InputData/spatial_data/initial_conditions/StateClassNew_250m.tif')
 
 # read annual MAT Tiff into R
-MAT <- raster("./FlowMultipliers/data/MAT_annual.tif")
+MAT <- raster("./Climate/MAT_annual.tif")
 
 # make reclassification matrix for simplified land cover raster
 lc_rcl <- c(1, NA, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6,
@@ -77,4 +78,4 @@ lcmap <- ggplot(data=lc_df) +
         size = 3.5)
 
 # save Land Cover map as .png file in HI_Model/output_processing/output
-ggsave("fig1_HI_LC.png", height = 5, width = 7, dpi = 300)
+ggsave("./Manuscript/fig_images/fig1_HI_LC.png", height = 5, width = 7, dpi = 400)

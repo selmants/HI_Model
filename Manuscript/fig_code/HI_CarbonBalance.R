@@ -94,7 +94,7 @@ cflowfig <- cflows %>%
 		theme(panel.grid.minor = element_blank())}
 
 # save cflowfig 
-ggsave("../fig_images/fig3_Cflows.png", width = 5, height = 5)
+ggsave("./fig_images/fig3_Cflows.png", width = 5, height = 5, dpi = 400)
 
 # calculate NEP and NBP from C flows
 cbal <- cflowjoin %>%
@@ -173,7 +173,7 @@ draw_label(expression(Net~biome~productivity~(Tg~C~y^{-1})),
 	x=0, y=0.55, vjust= 1.1, angle=90, size = 12) 
 
 # save two panel NBP fig as .png file
-ggsave("fig4_NBPpanels.png", width = 7, height = 6.5)
+ggsave("./fig_images/fig4_NBPpanels.png", width = 7, height = 6.5, dpi = 400)
 
 # calculate cumulative ∆NBP when swiching land use & climate scenarios
 dcumNBP <- cbal %>%
@@ -231,5 +231,5 @@ climdC <- dcumNBP %>%
 cumdNBP_panels <- plot_grid(ludC, climdC, ncol = 1, align = "v")
 
 # save two panel cumulative dNBP figure
-ggsave("fig5_cumdNBP.png", width = 6, height = 4)
+ggsave("./fig_images/fig5_cumdNBP.png", width = 6, height = 4, dpi = 400)
 

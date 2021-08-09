@@ -16,10 +16,10 @@ library(ggplot2)
 # 1 = Dry 		
 # 2 = Mesic 		
 # 3 = Wet	
-MZ <- raster('./InputData/spatial_data/MZ_3_250m.tif')
+MZ <- raster('./InputData/spatial_data/initial_conditions/MZ_3_250m.tif')
 
 # read annual MAT Tiff into R
-MAT <- raster("./FlowMultipliers/data/MAT_annual.tif")
+MAT <- raster("./Climate/MAT_annual.tif")
 
 # re-sample MZ projection to Lat. Long. using MAT
 MZdeg <- projectRaster(MZ, MAT, method = 'ngb')
@@ -52,4 +52,5 @@ mzmap <- ggplot(data=MZ_df) +
     	linetype = "solid", size = 0.5, color = "white"))
 
 # save Moisture Zone map as .png file 
-ggsave("figS1_MZ.png", height = 5, width = 7, dpi = 300)
+ggsave("./Manuscript/fig_images/figS1_MZ.png", 
+	height = 5, width = 7, dpi = 400)

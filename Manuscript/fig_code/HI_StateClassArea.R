@@ -17,7 +17,8 @@ library(tidyr)
 
 # read State Class model output data into R and summarize 
 # statewide by land use scenario
-sc <- read.csv("StateClassArea.csv", stringsAsFactors = FALSE) %>%
+sc <- read.csv("./HI_LandAreaTransitions/StateClassArea.csv", 
+	stringsAsFactors = FALSE) %>%
 	mutate(StateClassID = str_remove(.$StateClassID, ":All")) %>%
 	group_by(Scenario, Timestep, Iteration, StateClassID) %>%
 	summarize(area = sum(Area)) %>%
@@ -56,5 +57,5 @@ filter(StateClassID %in% c("Agriculture",
 		legend.text = element_text(size=10))}
 
 # save figure to .png file 
-ggsave("figS5_StateClassArea.png", height = 4, width = 7, dpi = 300)
+ggsave("figS6_StateClassArea.png", height = 4, width = 7, dpi = 400)
 	

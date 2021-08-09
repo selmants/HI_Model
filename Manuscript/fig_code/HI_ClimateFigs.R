@@ -17,24 +17,24 @@ library(RColorBrewer)
 library(cowplot) 
 
 # create list of annual rainfall .tif files
-rainlist <- list.files('rainfall_tiff_annual', full.names = TRUE)
+rainlist <- list.files('./Climate/rainfall_tiff_annual', full.names = TRUE)
 #create raster stack of annual rainfall (mm) .tif files
 rainstack <- stack(rainlist)
 # make raster layer of 30-year mean annual rainfall and re-sample
 # to change projection to UTM (this takes ~30 seconds)
 rain30ymean <- calc(rainstack, mean)
 # read in rasters of late century rainfall anomolies for RCPs 4.5 & 8.5
-rcp85anom <- raster("sd_rfanom_rcp85_late.tif")
-rcp45anom <- raster("sd_rfanom_rcp45_late.tif")
+rcp85anom <- raster("./Climate/GCM_rfanom/sd_rfanom_rcp85_late.tif")
+rcp45anom <- raster("./Climate/GCM_rfanom/sd_rfanom_rcp45_late.tif")
 # make rasters of late century rainfall differences from present
 raindiff85 <- rain30ymean*(rcp85anom/100)
 raindiff45 <- rain30ymean*(rcp45anom/100)
 
 # read in current mean annual temperature raster
-MAT <- raster("MAT_annual.tif") 
+MAT <- raster("./Climate/MAT_annual.tif") 
 # read in rasters of late century temperature differences for RCPs 4.5 & 8.5
-Tdelta_rcp45 <- raster("sd_Tdeltas_rcp45_late.tif")
-Tdelta_rcp85 <- raster("sd_Tdeltas_rcp85_late.tif")
+Tdelta_rcp45 <- raster("./Climate/GCM_Tdelta/sd_Tdeltas_rcp45_late.tif")
+Tdelta_rcp85 <- raster("./Climate/GCM_tdelta/sd_Tdeltas_rcp85_late.tif")
 
 #prepare rain30ymean and raindiff data to plot with geom_tile in ggplot
 rain_df <- rasterToPoints(rain30ymean) %>%
@@ -90,7 +90,8 @@ airtem <- ggplot(data=MAT_df) +
 # create two panel current climate figure
 climatefig <- plot_grid(airtem, rain, ncol =1, align = "hv")
 # save current climate fig as .png file 
-ggsave("figS2_CurrentClimate.png", climatefig, width = 5, height = 7)
+ggsave("./Manuscript/fig_images/figS3_CurrentClimate.png", climatefig, 
+	width = 5, height = 7, dpi = 400)
 
 # plot of deltaT at 2100 for RCP 4.5 using RColorBrewer palette
 dt45 <- ggplot(t45_df) +
@@ -157,5 +158,6 @@ r85<- ggplot(data=r85_df) +
 dclimatefig <- plot_grid(dt45, dt85, r45, r85, ncol = 2, align = "hv",
 	axis = "l")
 # save four panel plot of change in temperature as .png file
-ggsave("figS3_FutureClimate.png", dclimatefig, width = 6.5, height = 5.5)
+ggsave("./Manuscript/fig_images/figS4_FutureClimate.png", dclimatefig, 
+	width = 6.5, height = 5.5, dpi = 400)
 

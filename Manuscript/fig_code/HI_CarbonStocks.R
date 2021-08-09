@@ -113,4 +113,4 @@ cstockpanel <- plot_grid(TECfig, stocksfig,
 	labels = c("(a)", "(b)"), rel_widths = c(1.2, 1))
 
 # save C stocks fig as .png file
-ggsave("fig2_Cstocks.png", cstockpanel, width = 9, height = 3.5)
+ggsave("./fig_images/fig2_Cstocks.png", cstockpanel, width = 9, height = 3.5, dpi = 400)

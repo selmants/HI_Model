@@ -150,5 +150,5 @@ cfeNBPfig <- ggplot(nbp, aes(CFE_Rate, NBPmean)) +
 cfepanel <- plot_grid(cfeTECfig, cfeNBPfig, 
 	labels = c("(a)", "(b)"), rel_widths = c(1.6, 1))
 
-ggsave("fig6_cfe.png", cfepanel, width = 9, height = 3.75)
+ggsave("fig6_cfe.png", cfepanel, width = 9, height = 3.75, dpi = 400)
 
