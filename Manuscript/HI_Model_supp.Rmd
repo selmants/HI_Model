@@ -25,58 +25,40 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Supplementary Material: Ecosystem carbon balance in the Hawaiian Islands under different scenarios of future climate and land use change
 `r format(Sys.time(), '%B %d, %Y')`  
 
-### Moisture Zones
-
-State Classes for Agriculture, Forest, Grassland, Shrubland, and Tree Plantations were stratified into three Moisture Zones - Dry, Mesic, and Wet (Figure S1). These three zones were based on a moisture availability index (MAI), calculated as mean annual precipitation (MAP) minus potential evapotranspiration [PET; @price_mz_2012]. Areas where where MAI values were less than zero (i.e., where MAP < PET) were classified in the Dry Moisture Zone. Areas with MAI values between zero and 1,661 were classified in the Mesic Moisture Zone. The MAI value of 1,661 is roughly equivalent to areas at 1,000 m elevation that receive 2,500 mm of annual rainfall [@price_mz_2012]. Areas with MAI values greater than 1,661 were classified in the Wet Moisture Zone.
-
-```{r fig.align = 'center', out.width = "95%", fig.cap = "Supplemental - Moisture zones of the seven main Hawaiian Islands, adapted from Jacobi \\textit{et al.} (2017)."}
+### Moisture Zones  
+Agriculture, Forest, Grassland, Shrubland, and Tree Plantation land cover classes were stratified into three Moisture Zones - Dry, Mesic, and Wet (supplemental Figure 1). These three zones were based on a moisture availability index (MAI), calculated as mean annual precipitation (MAP) minus potential evapotranspiration [PET; @price_mz_2012]. Areas where where MAI values were less than zero (i.e., where MAP < PET) were classified in the Dry Moisture Zone. Areas with MAI values between zero and 1,661 were classified in the Mesic Moisture Zone. The MAI value of 1,661 is roughly equivalent to areas at 1,000 m elevation that receive 2,500 mm of annual rainfall [@price_mz_2012]. Areas with MAI values greater than 1,661 were classified in the Wet Moisture Zone.
+```{r fig.align = 'center', out.width = "99%", fig.cap = "Supplemental - Moisture zones of the seven main Hawaiian Islands, adapted from Jacobi \\textit{et al.} (2017)."}
 knitr::include_graphics("./fig_images/figS1_MZ.png")
 ```
-
-### Wildland Fire
-
-This study used a new spatial database of wildland fire perimeters on the main Hawaiian Islands from 1999-2019 to calculate annual area burned (Figure S2), wildland fire probabilities by Moisture Zone and State Class, and wildland fire size distributions. This new database compiles prior mapping efforts and data collections with new fire perimeter data mapped directly by Dr. Clay Trauernicht (Department of Natural Resources and Environmental Management, University of Hawaiʻi at Mānoa). The goal of this effort was to locate and map all fires greater than or equal to 20 hectares, but some smaller fires were included as detected in imagery. Fire perimeters for the years 2002-2011 were primarily from the U.S. Geological Survey's Monitoring Trends in Burn Severity (MTBS; https://www.mtbs.gov). The Hawaii Wildfire Management Organization (www.hawaiiwildfire.org) provided ground-based, GPS-mapped fire perimeters from Hawaiʻi Island, primarily in the Kona and Kohala regions. The U.S. National Park Service provided ground-based, GPS-mapped fire records from Hawaiʻi Volcanoes National Park. The Oʻahu Army Natural Resource Program provided ground-based, GPS-mapped fire records on Oʻahu. All other fires were mapped directly by Dr. Trauernicht using LANDSAT and Sentinel-2 satellite imagery. Data from USGS MTBS were prioritized for the years 2002-2011 in the case of duplicate records.
-
-```{r fig.align = 'center', out.width = "99%", fig.cap = "Supplemental - Annual area burned by wildland fire in the State of Hawaiʻi from 1999-2019, summed by year across the seven main Hawaiian Islands (A) and within each of the four largest islands (B). The dashed horizontal line in (A) represents the median area burned from 1999-2019."}
+### Wildland Fire  
+We used a new spatial database of wildland fire perimeters on the main Hawaiian Islands from 1999-2019 to calculate annual area burned (supplemental Figure 2), wildland fire probabilities by state type, and wildland fire size distributions. This new database compiles prior mapping efforts and data collections with newly mapped fire perimeter data from Dr. Clay Trauernicht (Department of Natural Resources and Environmental Management, University of Hawaiʻi at Mānoa). The goal was to locate and map all fires greater than or equal to 20 hectares, but some smaller fires were included as detected in imagery. Fire perimeters for the years 2002-2011 were primarily from the U.S. Geological Survey's Monitoring Trends in Burn Severity (MTBS; https://www.mtbs.gov). The Hawaii Wildfire Management Organization (www.hawaiiwildfire.org) provided ground-based, GPS-mapped fire perimeters from Hawaiʻi Island, mostly from the Kona and Kohala regions. The U.S. National Park Service provided ground-based, GPS-mapped fire records from Hawaiʻi Volcanoes National Park. The Oʻahu Army Natural Resource Program provided ground-based, GPS-mapped fire records on Oʻahu. All other fires were mapped directly by Dr. Trauernicht using LANDSAT and Sentinel-2 satellite imagery. Data from USGS MTBS were prioritized for the years 2002-2011 in the case of duplicate records.
+```{r fig.align = 'center', out.width = "95%", fig.cap = "Supplemental - Annual area burned by wildland fire in the State of Hawaiʻi from 1999-2019, summed by year across the seven main Hawaiian Islands (A) and within each of the four largest islands (B). The dashed horizontal line in (A) represents the median area burned from 1999-2019."}
 knitr::include_graphics("./fig_images/figS2_AnnualAreaBurned.png")
 ```
-
-### Climate
-
-Spatially explicit contemporary mean annual temperature and rainfall data (30-year means) for the main Hawaiian Islands at 250-m resolution (Figure S3) are from @giambelluca_online_2013 and @giambelluca_evapotranspiration_2014. Spatially explicit projections of change in annual temperature and change in annual rainfall for mid-century (2049-2069) and end of century (2070-2099; Figure S4) were developed using statistically downscaled CMIP5 climate projections under RCP 4.5 and RCP 8.5 for the Hawaiian Islands from @timm_statistical_2015 and @timm_future_2017. To avoid biases, the modeled present-day (1975–2005) CMIP5 climatology was used to standardize the resulting predictor time series, and the simulated future changes in the predictors were measured relative to their present-day mean states. See @timm_statistical_2015 and @timm_future_2017 for a more detailed description of potential statistical downscaling biases.  
-
-```{r fig.align = 'center', out.width = "95%", fig.cap = "Supplemental - Contemporary 30-year climate normals for mean annual temperature (top panel) and mean annual rainfall (bottom panel) for the seven main Hawaiian Islands. Data from Giambelluca \\textit{et al.} (2013) and Giambelluca \\textit{et al.} (2014)."}
+### Climate  
+Spatially explicit contemporary mean annual temperature and rainfall data for the main Hawaiian Islands at 250-m resolution (supplemental Figure 3) are from @giambelluca_online_2013 and @giambelluca_evapotranspiration_2014. Spatially explicit projections of change in annual temperature and annual rainfall for mid-century (2049-2069) and end of century (2070-2099; supplemental Figure 4) are  from statistically downscaled CMIP5 climate projections under RCP 4.5 and RCP 8.5 from @timm_statistical_2015 and @timm_future_2017. To avoid biases, the modeled present-day (1975–2005) CMIP5 climatology was used to standardize the resulting predictor time series, and the simulated future changes were measured relative to their present-day mean states. See @timm_statistical_2015 and @timm_future_2017 for a more detailed description of potential statistical downscaling biases.  
+```{r fig.align = 'center', out.width = "80%", fig.cap = "Supplemental - Contemporary 30-year climate normals for mean annual temperature (top panel) and mean annual rainfall (bottom panel) for the seven main Hawaiian Islands. Data from Giambelluca \\textit{et al.} (2013) and Giambelluca \\textit{et al.} (2014)."}
 knitr::include_graphics("./fig_images/figS3_CurrentClimate.png")
 ```
-```{r fig.align = 'center', out.width = "99%", fig.cap = "Supplemental - Projected change in mean annual temperature (top panels) and mean annual rainfall (bottom panels) by 2100 under RCP 4.5 and RCP 8.5 based on statistical downscaling of an ensemble of climate models (CMIP5)."}
+```{r fig.align = 'center', out.width = "95%", fig.cap = "Supplemental - Projected change in mean annual temperature (top panels) and mean annual rainfall (bottom panels) by 2100 under RCP 4.5 and RCP 8.5 based on statistical downscaling of an ensemble of climate models (CMIP5)."}
 knitr::include_graphics("./fig_images/figS4_FutureClimate.png")
 ```
-
-### Initializing NPP  
-
-
-
-
-
+### Initializing NPP 
+Initial values for net primary production (NPP) in LUCAS were calculated using a lookup table derived from the Integrated Biosphere Simulator (IBIS; supplemental Table 1). These values were adjusted with spatially explicit stationary NPP multipliers to reflect local variation driven by microclimate (supplemental Figure 4) as described in detail in @sleeter_effects_2018 and @sleeter_effects_2019. Briefly, we derived the set of NPP spatial multipliers by first calculating NPP independently of the IBIS values for each simulation cell using empirical relationships between total annual NPP and mean annual rainfall or temperature [@schuur_productivity_2003; @del_grosso_global_2008] based on Hawaiʻi-specific climate data (supplemental Figure 3; @giambelluca_online_2013; @giambelluca_evapotranspiration_2014). We then calculated the NPP spatial multipliers as the NPP anomaly for each simulation cell relative to the mean of these empirically-derived NPP values for each state type (i.e., the unique combination of moisture zone and land cover class; supplemental Figure 4). These NPP multipliers were then applied to the IBIS-derived values to create a spatial distribution of NPP used to initiate the LUCAS model (supplemental Figure 4). 
 ```{r}
 library(kableExtra)
-
 ibisnpp <- read.csv("IBISnpp_wide.csv", stringsAsFactors = FALSE)
 kbl(ibisnpp, booktabs = T, caption = "Supplemental - Mean IBIS-derived NPP values by Land Cover and Moisture Zone, in kg of C per square meter per year.") %>%
    add_header_above(c(" ", "NPP by Moisture Zone" = 3))
 ```
-
-```{r fig.align = 'center', out.width = "99%", fig.cap = "Supplemental - Stationary spatial NPP multipliers (top panel) and initial NPP based on the product of mean IBIS-derived NPP values (Table 1) and stationary spatial NPP multipliers (above). Developed and Barren land cover types are excluded from both maps."}
-knitr::include_graphics("./fig_images/figS4_initialNPP.png")
+```{r fig.align = 'center', out.width = "80%", fig.cap = "Supplemental - Stationary spatial NPP multipliers (top panel) and initial NPP based on the product of mean IBIS-derived NPP values (supplemental Table 1) and stationary spatial NPP multipliers (above). Developed and Barren land cover types are excluded from both maps."}
+knitr::include_graphics("./fig_images/figS5_initialNPP.png")
 ```
 ### Change in State Class Area
-
-Projections of total land area covered by each of five State Classes (Agriculture, Developed, Forest, Grassland and Shrubland) were summed by year and Monte Carlo iteration across the seven main Hawaiian Islands for each of two land use scenarios (low and high; Figure S5).
-
+Projections of total land area covered by each of five State Classes (Agriculture, Developed, Forest, Grassland and Shrubland) were summed by year and Monte Carlo iteration across the seven main Hawaiian Islands for each of two land use scenarios (low and high; supplemental Figure 5). The overall decline in Agricultural land between 2020 and 2040 in the low land use scenario led directly to the increase in Forest, Grassland, and Shrubland area over the same time period. Although Agricultural land area in the high land use scenario appears more stable over time, the trend actually reflects a balance between high rates of agricultural contraction in some areas and high rates of agricultural expansion in others.     
 ```{r fig.align = 'center', out.width = "99%", fig.cap = "Supplemental - Projections of total land area by year for each of five State Classes in the seven main Hawaiian Islands (Agriculture, Developed, Forest, Grassland, and Shrubland) under low and high land use change scenarios for the period 2010-2100. Solid lines represent the mean of 30 Monte Carlo realizations and shaded areas represent minimum and maximum Monte Carlo values."}
-knitr::include_graphics("./fig_images/figS5_StateClassArea.png")
+knitr::include_graphics("./fig_images/figS6_StateClassArea.png")
 ```
-
 \pagebreak
 
 ## References
