@@ -4,7 +4,7 @@ Input data, R scripts, and manuscript files for LUCAS model projections of ecosy
 
 LUCAS model output data and metadata are freely available in machine-readable format through the USGS ScienceBase data repository at: https://doi.org/10.5066/P9AWLFKZ
 
-Manuscript submitted for publication to *Environmental Research Letters* on 2021-04-05  
+Manuscript submitted for publication in the IOPscience journal *Environmental Research Letters* on 2021-04-05  
 
 ## Directory Structure
 
