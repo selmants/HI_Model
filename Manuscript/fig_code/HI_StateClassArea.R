@@ -57,5 +57,5 @@ filter(StateClassID %in% c("Agriculture",
 		legend.text = element_text(size=10))}
 
 # save figure to .png file 
-ggsave("figS6_StateClassArea.png", height = 4, width = 7, dpi = 400)
+ggsave("figS7_StateClassArea.png", height = 4, width = 7, dpi = 400)
 	

@@ -243,6 +243,14 @@ growthmultipliers <- overlay(futureNPP, presentNPP,
 # re-name layers in raster stack
 names(growthmultipliers) <- rcpnames
 
+# Write end-of-century NPP multiplier rasters for RCP 4.5 
+writeRaster(growthmultipliers[[1]], "./FlowMultipliers/data/RCP45_NPPmulti_end.tif", 
+	overwrite = TRUE)
+
+# Write end-of-century NPP multiplier rasters for RCP 8.5
+writeRaster(growthmultipliers[[3]], "./FlowMultipliers/data/RCP85_NPPmulti_end.tif", 
+	overwrite = TRUE)
+
 # create function to mask growthmultipliers stack with individual rasters
 # from islandstack
 islandmask <- function(x) {
