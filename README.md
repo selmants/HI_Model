@@ -6,6 +6,8 @@ LUCAS model output data and metadata are freely available in machine-readable fo
 
 Manuscript submitted for publication in the IOPscience journal *Environmental Research Letters* on 2021-04-05  
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5198072.svg)](https://doi.org/10.5281/zenodo.5198072)
+
 ## Directory Structure
 
 * ___Carbon_IBIS___ - IBIS DGVM output data and R code used to create a State Attribute Values table (carbon stocks by Moisture Zone and State Class) and a Flow Pathways table (carbon fluxes to and from stocks) using IBIS data as input. 
