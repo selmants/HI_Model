@@ -51,6 +51,6 @@ mzmap <- ggplot(data=MZ_df) +
     legend.background = element_rect(fill="white", 
     	linetype = "solid", size = 0.5, color = "white"))
 
-# save Moisture Zone map as .png file 
+# save Moisture Zone map as .png file
 ggsave("./Manuscript/fig_images/figS1_MZ.png", 
 	height = 5, width = 7, dpi = 400)
