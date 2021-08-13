@@ -10,6 +10,7 @@ header-includes:
    - \doublespacing
 output: 
   pdf_document: 
+    keep_tex: yes
     latex_engine: xelatex
 mainfont: Times New Roman
 fontsize: 12pt
