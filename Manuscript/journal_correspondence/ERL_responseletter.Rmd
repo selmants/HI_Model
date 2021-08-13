@@ -79,7 +79,7 @@ We agree this was a confusing use of terminology. We have altered the text here 
 Yes, this was a confusing use of terminology. We have completely re-written this paragraph based on this and other comments from this referee (lines 180-191), such that we no longer uses the term 'state type' at all.   
 
 **L162, how litter and dead wood pools were initialized?**  
-We have added text describing how litter and dead wood pools were initialized using values from the IBIS DGVM (lines 180-181) and allowed to equilibrate with spatially variable NPP using a spinup model (lines 205-210).    
+We have added text describing how litter and dead wood pools were initialized using values from the IBIS DGVM (lines 180-181) and allowed to equilibrate with spatially variable NPP using a spinup model (lines 205-210). GeoTIFF raster files of initial carbon stocks are available at https://doi.org/10.5281/zenodo.5198072.    
 
 **L161, what is 30-year climate normal come from? Does it have consistent temperature and rainfall distribution with RCP projections during 2010 and 2020? Or is there any bias between 30-year climate normal and RCP projections?**  
 The contemporary 30-year climate normals for rainfall and temperature come from the references Giambelluca et al. 2013 and Giambelluca et al. 2014, as cited on line 183 and depicted in supplementary Figure 3. We have added text to the supplementary that better describes statistical downscaling of CMIP5 temperature and rainfall projections and how they compare to contemporary climate data (supplementary lines 47-53). 

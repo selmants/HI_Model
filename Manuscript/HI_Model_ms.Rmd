@@ -143,7 +143,7 @@ This study was funded by the U.S. Geological Survey Biological Carbon Sequestrat
 
 ## Data and code availability
 
-The data that support the findings of this study are openly available. LUCAS model tabular output data and metadata are available in machine readable format from  USGS ScienceBase at https://doi.org/10.5066/P9AWLFKZ. LUCAS model input data and R scripts used to format input data, summarize output data, and compile this manuscript are available at https://doi.org/10.5281/zenodo.5198072. 
+The data that support the findings of this study are openly available. LUCAS model tabular output data and metadata are available in machine readable format from  the USGS ScienceBase repository at https://doi.org/10.5066/P9AWLFKZ. LUCAS model input data and R scripts used to format input data, summarize output data and compile this manuscript are available from a GitHub repository (https://github.com/selmants/HI_Model) archived at https://doi.org/10.5281/zenodo.5198072. 
 
 ## ORCID
 
