@@ -4,7 +4,7 @@ Input data, R scripts, and manuscript files for LUCAS model projections of ecosy
 
 LUCAS model output data and metadata are freely available in machine-readable format through the USGS ScienceBase data repository at: https://doi.org/10.5066/P9AWLFKZ
 
-Manuscript submitted for publication in the IOPscience journal *Environmental Research Letters* on 2021-04-05  
+Manuscript submitted for publication in the IOPscience journal *Environmental Research Letters* on 2021-04-05, accepted for publication on 2021-08-27.  
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5198072.svg)](https://doi.org/10.5281/zenodo.5198072)
 
@@ -20,7 +20,7 @@ Manuscript submitted for publication in the IOPscience journal *Environmental Re
 
 * ___InputData___ - input data used to parameterize the model, including Flow Pathways, State Attribute Values, Flow Multipliers, Transition Targets, Transition Pathways, and Spatial Multipliers for growth, fire, and transitions. 
 
-* ___Manuscript___ - R code used to create figures and the R Markdown manuscript file, as well as a bibTeX file for references. 
+* ___Manuscript___ - R code to create figures, R Markdown code for manuscript files and journal correspondence, and a bibTeX file for references. 
 
 * ___Transitions___ - historical land cover change data, population projections, and R code used to create Transition Pathways and Transition Targets for each of the two land-use change scenarios. 
 
