@@ -2,9 +2,9 @@
 
 Input data, R scripts, and manuscript files for LUCAS model projections of ecosystem carbon balance in the Hawaiian Islands under different scenarios of climate and land use change. 
 
-LUCAS model output data and metadata are freely available in machine-readable format through the USGS ScienceBase data repository at: https://doi.org/10.5066/P9AWLFKZ
+LUCAS model output data and metadata are freely available in machine-readable format from the USGS ScienceBase repository: https://doi.org/10.5066/P9AWLFKZ
 
-Manuscript accepted for publication in *Environmental Research Letters* on 2021-08-27.
+Manuscript accepted for publication in *Environmental Research Letters* on 2021-08-27, available at https://doi.org/10.1088/1748-9326/ac2347
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5198072.svg)](https://doi.org/10.5281/zenodo.5198072)
 
